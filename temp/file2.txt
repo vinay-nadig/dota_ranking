@@ -1,0 +1,16 @@
+DotA v6.73c
+1.26
+-apspso
+36:10
+18/02/2012 00:28
+blinken
+Local Game (blinken)
+3v3
+Sentinel
+
+911 | Sentinel | KD: 8/1/5 CS: 93/1/0 | Soul Keeper | 14971 |  Wraith Band ,  Power Treads ,  Helm of the Dominator ,  Manta Style ,  Empty slot ,  Empty slot ,  | 18
+MoNk | Sentinel | KD: 7/1/12 CS: 60/3/2 | Tidehunter | 14001 |  Urn of Shadows ,  Lothar's Edge ,  Arcane Boots ,  Empty slot ,  Hyperstone ,  Mask of Madness ,  | 20
+sleepy | Sentinel | KD: 11/3/12 CS: 90/1/0 | Faerie Dragon | 13665 |  Empty Bottle ,  Arcane Boots ,  Kelen's Dagger ,  Dagon 1 ,  Magic Wand ,  Empty slot ,  | 19
+Aarakshaka | Scourge | KD: 1/8/0 CS: 41/0/0 | Juggernaut | 4663 |  Power Treads ,  Magic Stick ,  Vladmir's Offering ,  Healing Salve ,  Empty slot ,  Empty slot ,  | 12
+kRishtalysis | Scourge | KD: 3/10/1 CS: 91/1/0 | Drow Ranger | 6935 |  Wraith Band ,  Wraith Band ,  Crystalys ,  Empty slot ,  Power Treads ,  Claymore ,  | 14
+blinken | Scourge | KD: 1/9/3 CS: 46/5/0 | Slithereen Guard | 5140 |  Power Treads ,  Bracer ,  Ring of Regeneration ,  Ring of Regeneration ,  Ironwood Branch ,  Gloves of Haste ,  | 13

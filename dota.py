@@ -31,7 +31,8 @@ dic = {  'shi' : 'shinigami',
 				'rge' : 'rgenx',
 				'lee' : 'leeonidas',
 				'bli' : 'blinken',
-				'ind' : 'inductor' }
+				'ind' : 'inductor',
+				'mrc' : 'mrc[labrinth]'}
 			
 
 
@@ -51,13 +52,17 @@ def main():
 
 def write_html():
 		fp = open("html/ranking.html", "w")
-		fp.write(open("html/template1.txt", "r").read())
-		cur1.execute("select * from player order by points desc")
-		for row in cur1.fetchall():
-				fp.write("<tr><td>" + str(row[0]) + "</td><td>" + str(row[1]) + "</td><td>" + str(row[2]) + "</td><td>" + str(row[3]) + "</td><td>" + str(row[4]) + "</td><td>" +  str(row[5]) + "</td><td>" + str(row[6]) + "</td></tr>")
-		fp.write("</table>")
-		fp.close()
+		template = open("html/ranking_template.txt", "r").read()
 
+		cur1.execute("select * from player order by points desc")
+		to_write = ""
+		for row in cur1.fetchall():
+				to_write += "<tr><td>" + str(row[0]) + "</td><td>" + str(row[1]) + "</td><td>" + str(row[2]) + "</td><td>" + str(row[3]) + "</td><td>" + str(row[4]) + "</td><td>" +  str(row[5]) + "</td><td>" + str(row[6]) + "</td></tr>"
+
+		template = template.replace("PLACEHOLDER", to_write)
+		fp.write(template)
+
+		fp.close()
 
 # Uploads value to the Player table
 def upload_player_stats1(player, game, points):
@@ -68,10 +73,10 @@ def upload_player_stats1(player, game, points):
 		tot_Kills = cur1.fetchall()[0][0]
 		cur1.execute("select sum(Deaths) from gameplay where pid=?", t)
 		tot_Deaths = cur1.fetchall()[0][0]
-		cur1.execute("select sum(Assits) from gameplay where pid=?", t)
+		cur1.execute("select sum(Assists) from gameplay where pid=?", t)
 		tot_Assists = cur1.fetchall()[0][0]
-		t = (tot_Kills, tot_Deaths, tot_Assists, tot_matches, points, player.pid)
-		cur1.execute("update player set Total_Kills=?, Total_Deaths=?, Total_Assists=?, Total_Matches=?, points=? where Id=?", t)
+		t = (tot_Kills, tot_Deaths, tot_Assists, tot_matches, player.pid)
+		cur1.execute("update player set Total_Kills=?, Total_Deaths=?, Total_Assists=?, Total_Matches=? where Id=?", t)
 
 
 # Uploads value to the Game table
@@ -83,18 +88,31 @@ def upload_game_info(game):
 # Uploads values into gameplay gtables
 def upload_player_info(player, game, player_code):
 		# to check if he is a new player
-		try:
+		if(player_code in dic.keys()):
 				t = (dic[player_code],)
 				cur1.execute("select id from player where name=?", t)
 				player.pid = cur1.fetchall()[0][0]
+		else:
+				response = raw_input("Enter %s into database?(y or n)"%player.name)
+				if(response.strip().lower() == 'n'):
+						return
+				else:
+						cur1.execute("select max(id) from player")
+						player.pid = cur1.fetchall()[0][0] + 1
+						t = (player.pid, player.name, 0, 0, 0 ,0, 100)
+						cur1.execute("insert into player values(?,?,?,?,?,?,?)", t)
+						dic[player_code] = player.name
+#		try:
+#				t = (dic[player_code],)
+#				cur1.execute("select id from player where name=?", t)
+#				player.pid = cur1.fetchall()[0][0]
 		# if he is a new player, create a new id and add to database
-		except:
-				cur1.execute("select max(id) from player")
-				player.pid = cur1.fetchall()[0][0] + 1
-				t = (player.pid, player.name, 0, 0, 0, 0, 0)
-				cur1.execute("insert into player values(?,?,?,?,?,?,?)", t)
-				dic[player_code] = player.name
-				conn1.commit()
+#		except:
+#				cur1.execute("select max(id) from player")
+#				player.pid = cur1.fetchall()[0][0] + 1
+#				t = (player.pid, player.name, 0, 0, 0, 0, 0)
+#				cur1.execute("insert into player values(?,?,?,?,?,?,?)", t)
+#				dic[player_code] = player.name
 		t = (player.hero,)
 		cur3.execute("select cp, sp, dm from heroes where name=?", t)
 		res = cur3.fetchall()
@@ -166,7 +184,46 @@ def file_parser(filename, game):
 				player.cd = int(player_stats[4])
 				player.nk = int(player_stats[5])
 				upload_player_info(player, game, player_code)
+		moderate_points(game)
 
+def moderate_points(game):
+		dic_of_temp_scores = {}
+		dic_of_final_points = {}
+		dic_of_points = {}
+		max_score = game.no_of_players*5
+		total_g, total_l = 0, 0
+		dic_of_stats = {}
+		t = (game.Id,)
+		cur1.execute("select pid from gameplay where gid=?", t)
+		res = cur1.fetchall()
+		for i in res:
+				t = (game.Id, i[0])
+				cur1.execute("select kills, deaths, assists, hero from gameplay where gid=? and pid=?", t)
+				res1 = cur1.fetchall()
+				dic_of_stats[i[0]] = (res1[0][0], res1[0][1], res1[0][2], res1[0][3])
+		for i in dic_of_stats:
+				t = (dic_of_stats[i][3],)
+				cur3.execute("select cp, sp, dm from heroes where name=?", t)
+				res = cur3.fetchall()
+				if(res):
+						cp, sp, dm = res[0][0], res[0][1], res[0][2]
+				else:
+						cp, sp, dm = 0.5, 0.5, 0.5
+				dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp), (-dm*dic_of_stats[i][1]))
+		for i in dic_of_temp_scores:
+				total_g += dic_of_temp_scores[i][0]
+				total_l += abs(dic_of_temp_scores[i][1])
+		for i in dic_of_temp_scores:
+				dic_of_points[i] = ((((dic_of_temp_scores[i][0]/total_g)*max_score)-5), (((dic_of_temp_scores[i][1]/total_l)*max_score)+5))
+		for i in dic_of_points:
+				cur1.execute("select points from player where player.id=?", (i,))
+				points = cur1.fetchall()[0][0]
+				dic_of_final_points[i] = points + dic_of_points[i][0] + dic_of_points[i][1]
+				t = (dic_of_final_points[i], i)
+				cur1.execute("update player set points=? where id=?", t)
+
+
+		
 		
 if __name__ == "__main__":
 		main()

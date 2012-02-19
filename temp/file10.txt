@@ -1,0 +1,20 @@
+DotA v6.73c
+1.26
+-spsoap
+38:01
+19/02/2012 01:01
+blinken
+Local Game (blinken)
+5v5
+Sentinel
+
+911 | Sentinel | KD: 11/1/7 CS: 76/2/0 | Soul Keeper | 15029 |  Wraith Band ,  Power Treads ,  Helm of the Dominator ,  Manta Style ,  Quarterstaff ,  Empty slot ,  | 18
+buddhenator | Sentinel | KD: 8/1/12 CS: 123/12/0 | Morphling | 16797 |  Empty Bottle ,  The Butterfly ,  Magic Wand ,  Ethereal Blade ,  Scroll of Town Portal ,  Power Treads ,  | 20
+WhipLash | Sentinel | KD: 6/6/9 CS: 42/0/0 | Vengeful Spirit | 9517 |  Boots of Travel ,  Void Stone ,  Ultimate Orb ,  Empty slot ,  Empty slot ,  Empty slot ,  | 16
+WrEck | Sentinel | KD: 0/0/0 CS: 0/0/0 | Gyrocopter | 6011 |  Ironwood Branch ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  | 1
+RGenX | Sentinel | KD: 2/3/2 CS: 12/0/26 | Night Stalker | 8039 |  Chainmail ,  Circlet of Nobility ,  Armlet of Mordiggian ,  Helm of the Dominator ,  Boots of Speed ,  Empty slot ,  | 11
+Aarakshaka | Scourge | KD: 0/7/2 CS: 38/0/0 | Juggernaut | 4710 |  Power Treads ,  Sobi Mask ,  Broadsword ,  Magic Stick ,  Empty slot ,  Empty slot ,  | 11
+MoNk | Scourge | KD: 0/8/2 CS: 46/4/0 | Demon Witch | 3739 |  Nathrezim Buckler ,  Headdress of Rejuvenation ,  Null Talisman ,  Boots of Speed ,  Empty slot ,  Empty slot ,  | 11
+LeeOnidas | Scourge | KD: 1/5/4 CS: 56/0/0 | Silencer | 6102 |  Magic Wand ,  Force Staff ,  Null Talisman ,  Power Treads ,  Empty slot ,  Empty slot ,  | 12
+labrinth | Scourge | KD: 7/4/0 CS: 47/1/10 | Bounty Hunter | 8030 |  Power Treads ,  Ancient Tango of Essifation ,  Mask of Madness ,  Empty slot ,  Ultimate Orb ,  Empty slot ,  | 13
+blinken | Scourge | KD: 3/6/5 CS: 46/14/0 | Anti-Mage | 6031 |  Wraith Band ,  Vanguard ,  Power Treads ,  Healing Salve ,  Belt of Giant Strength ,  Empty slot ,  | 13

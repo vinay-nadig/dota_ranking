@@ -1,0 +1,18 @@
+DotA v6.73c
+1.26
+-apspso
+54:36
+18/02/2012 19:07
+BlInK
+Local Game (BlInK)
+4v4
+Sentinel
+
+Massino(Spark) | Sentinel | KD: 7/8/7 CS: 103/0/0 | Spiritbreaker | 13967 |  Bracer ,  Phase Boots ,  Buriza-do Kyanon ,  Empty slot ,  Aegis of the Immortal ,  Empty slot ,  | 21
+BlInK | Sentinel | KD: 4/4/16 CS: 58/5/1 | Slithereen Guard | 13943 |  Bracer ,  Vanguard ,  Hood of Defiance ,  Boots of Speed ,  Healing Salve ,  Kelen's Dagger ,  | 20
+buddhenator | Sentinel | KD: 21/4/4 CS: 268/16/21 | Obsidian Destroyer | 28115 |  Shiva's Guard ,  Refresher Orb ,  Guinsoo's Scythe of Vyse ,  Force Staff ,  Power Treads ,  Scroll of Town Portal ,  | 23
+RGenX | Sentinel | KD: 1/1/6 CS: 44/0/0 | Faceless Void | 11232 |  Ancient Janggo of Endurance ,  Tranquil Boots ,  Mask of Madness ,  Battle Fury ,  Empty slot ,  Empty slot ,  | 17
+leeonidas | Scourge | KD: 6/10/8 CS: 143/0/5 | Axe | 12279 |  Empty slot ,  Vanguard ,  Heart of Tarrasque ,  Power Treads ,  Scroll of Town Portal ,  Bracer ,  | 20
+krazzy | Scourge | KD: 8/8/3 CS: 66/7/23 | Bounty Hunter | 11797 |  Poor Man's Shield ,  Vanguard ,  Vladmir's Offering ,  Power Treads ,  Stygian Desolator ,  Scroll of Town Portal ,  | 20
+MoNk | Scourge | KD: 1/9/9 CS: 53/3/0 | Demon Witch | 7526 |  Aghanim's Scepter ,  Scroll of Town Portal ,  Mekansm ,  Empty slot ,  Boots of Speed ,  Empty slot ,  | 17
+Aarakshaka | Scourge | KD: 0/6/3 CS: 86/0/16 | Lone Druid | 8954 |  Healing Salve ,  Void Stone ,  Vladmir's Offering ,  Power Treads ,  Claymore ,  Broadsword ,  | 16

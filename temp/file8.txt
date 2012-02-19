@@ -1,0 +1,20 @@
+DotA v6.73c
+1.26
+-apspso
+25:31
+19/02/2012 00:00
+blinken
+Local Game (blinken)
+5v5
+Sentinel
+
+sleepy | Sentinel | KD: 9/2/13 CS: 20/0/1 | Crystal Maiden | 9040 |  Sentry Wards ,  Magic Wand ,  Phase Boots ,  Force Staff ,  Bracer ,  Scroll of Town Portal ,  | 14
+labrinth | Sentinel | KD: 6/4/6 CS: 19/0/14 | Legion Commander | 7411 |  Power Treads ,  Mask of Death ,  Empty slot ,  Hyperstone ,  Empty slot ,  Empty slot ,  | 13
+blinken | Sentinel | KD: 6/3/8 CS: 51/0/1 | Lycanthrope | 9664 |  Bracer ,  Boots of Speed ,  Ironwood Branch ,  Vladmir's Offering ,  Sacred Relic ,  Empty slot ,  | 15
+LeeOnidas | Sentinel | KD: 9/1/6 CS: 61/0/2 | Troll Warlord | 13151 |  Power Treads ,  Helm of the Dominator ,  Wraith Band ,  Yasha ,  The Butterfly ,  Empty slot ,  | 12
+buddhenator | Sentinel | KD: 6/4/8 CS: 32/10/0 | Necro'lic | 7275 |  Phase Boots ,  Magic Wand ,  Hood of Defiance ,  Dust of Appearance ,  Scroll of Town Portal ,  Sentry Wards ,  | 12
+Massino(Spark) | Scourge | KD: 6/8/6 CS: 5/0/0 | Bounty Hunter | 3495 |  Wraith Band ,  Healing Salve ,  Phase Boots ,  Empty slot ,  Empty slot ,  Empty slot ,  | 10
+Marvin | Scourge | KD: 4/13/6 CS: 9/3/0 | Sacred Warrior | 1931 |  Ancient Tango of Essifation ,  Gauntlets of Strength ,  Gauntlets of Strength ,  Boots of Speed ,  Gloves of Haste ,  Empty slot ,  | 9
+911 | Scourge | KD: 1/8/9 CS: 24/0/1 | Soul Keeper | 3042 |  Wraith Band ,  Power Treads ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  | 11
+Aarakshaka | Scourge | KD: 2/5/1 CS: 22/0/0 | Juggernaut | 3225 |  Power Treads ,  Magic Stick ,  Healing Salve ,  Empty slot ,  Empty slot ,  Empty slot ,  | 9
+iNdUcToR | Scourge | KD: 0/4/1 CS: 43/0/0 | Dwarven Sniper | 4196 |  Wraith Band ,  Empty slot ,  Mask of Death ,  Empty slot ,  Empty slot ,  Empty slot ,  | 11

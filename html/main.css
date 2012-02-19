@@ -1,0 +1,191 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	color: #afafaf;
+	background-color: #0b0f11;
+}
+
+body {
+	font: 75%/1.5em "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	text-shadow: #000 0px 0px 0px;
+}
+
+#home #main {
+	margin-top: 120px;
+}
+
+
+ul {
+	list-style-type: none;
+	margin-bottom: 2em;
+}
+
+h1, h2 {
+	font: bold 1.5em "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	color: #fff;
+	margin-bottom: 5px;
+	display: block;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin-bottom: 5px;
+	font-weight: normal;
+	font-style: normal;
+	display: block;
+}
+
+p {
+	margin-bottom: 1.5em;
+	clear: both;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	vertical-align: bottom;
+	border-style: none;
+}
+
+#container {
+	width: 850px;
+	overflow: hidden;
+	padding-top: 67px;
+	padding-left: 50px;
+	padding-right: 10px;
+}
+
+/* SIDEBAR */
+
+#sidebar {
+	width: 250px;
+	float: left;
+	padding-bottom: 55px;
+}
+
+#sidebar a#logo {
+	width: 244px;
+	height: 118px;
+	display: block;
+	text-indent: -9999px;
+	background: url(logo.gif) no-repeat 0 0;
+	margin-bottom: 5px;
+}
+
+#sidebar ul#navigation {
+	font: bold 1.5em "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+#sidebar ul#navigation li {
+	
+}
+
+#sidebar ul#navigation li a {
+	color: #7d7d7d;
+	text-decoration: none;
+}
+
+#sidebar ul#navigation li a.current {
+	color: #fff;
+}
+
+#sidebar ul#navigation li a:hover {
+	color: #fff;
+}
+
+/* #MAIN */
+
+#main {
+	width: 575px;
+	float: right;
+	padding-bottom: 55px;
+	margin-top: 171px;
+	overflow: hidden;
+	display: inline;
+}
+
+
+#main .row {
+	overflow: hidden;
+	width: 700px;
+	margin-bottom: 60px;
+}
+
+#main .row .left {
+	float: left;
+	width: 180px;
+}
+
+#main .row .right {
+	float: right;
+	width: 500px;
+	height: 306px;
+	position: relative;
+}
+
+#main .row .right img {
+	position: absolute;
+}
+
+/* FOOTER */
+
+#footer {
+	margin-bottom: 10px;
+	color: #858788;
+	background: url(../images/logo_small.gif) no-repeat 197px 17px;
+	border-top: 1px solid #242729;
+	font: 0.8em "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	clear: both;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	width: 635px;
+	padding-left: 215px;
+}
+
+#footer p {
+	margin-left: 60px;
+}
+
+
+#box-table-a
+{
+	text-align: right;
+	border-collapse: collapse;
+}
+#box-table-a th
+{
+	font: 75%/1.5em "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    color:#fff;
+    white-space:nowrap;
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #001C23;
+}
+#box-table-a td
+{
+	font: 75%/1.5em "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #001C23;
+
+	padding: 3px;
+}
+
+#box-table-a tr:hover td
+{
+	background: #14272F;
+	color: #fff;
+}
+
+

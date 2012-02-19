@@ -1,0 +1,82 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Calculation</title>
+
+</head>
+<body id = "home">
+    <div id = "container">
+        <div id = "sidebar">
+            <a id="logo" href="index.html">mvit dota</a>
+            <ul id="navigation">
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="calculation.html" class="current">Calculation</a></li>
+                <li><a href="https://sites.google.com/site/mvitdota/">Learn More</a></li>
+                <li><a href="http://dotahomer.com">Download Maps</a></li>
+            </ul>
+        </div>
+
+        <div id = "main">
+            <h3>Technical :</h3><p> Each hero is given 3 attributes known as CP, SP and DM.<br> CP = Carry Potential</br> SP = Support Potential<br> DM = Death Margin</br> All the 3 attributes are rated on a scale of 0 to 1.</p>
+
+<p>Carry Potential and Support Potential depend on how well a hero can carry and support respectively. Example - Naga Siren, Magina and Ursa are all hard carries and have CP >= 0.8. Rhasta, Lion, Omni Knight are all good supports and have SP >= 0.7.</p>
+
+<p>Death Margin of a hero is a measure of his/her survivability. Example -  Puck is hard to kill with her Phase Shift, Illusory Orb and an optional Dagger. Hence her DM is 0.8(the highest).<br> Magina has 50% magical damage reduction and a Blink. hence his DM is 0.7.</br> Vengeful Spirit is usually an initiator, hence her DM is 0.3(one of the lowest).<br>For a complete list go <a href="#list">here.</a></br></p>
+
+<h3>Algorithm:</h3> The concept is analogous to how a casino functions. Every player initially gets 100 coins. If a player has a bad game where he has not played upto his hero's full potential, he loses some fraction of his coins. These "lost" coins are won by players who have had a good game. Thus total coins in the league are always a constant.
+
+<p><h3>MoNk's Law of conservation of coins :</h3>  MoNk's law states that "Coins are neither created nor destroyed but are only transferred from one player to another".</p>
+
+<h3>Why MoNk's Law?</h3>  Suppose a cumulative points scheme is used instead of MoNk's law, then over time, people who play more games will gradually have more points than people who rarely play, irrespective of their performance in these games. Monk's law ensures that players don't increase their points just by playing more games, and also people who play rarely but play well also have a fair chance of getting to the top spot. The only way to increase your coins is to consistently perform well.</p>
+
+<h3>Technical :</h3> Warning : Not for the faint hearted! Proceed at your own risk!</p>
+
+<h3>Coins Distribution:</h3>  For every 5v5 game, the casino puts a total of +50 coins (5 per player) up for grabs for kills and assists. And a total of -50 penalty for deaths. Thus MoNk's law holds good. (i.e overall the casino has not awarded even a single extra coin. The casino has just transferred coins in favor of the better players). For games where there is not 5v5 players, the proportional stakes are up for grabs as follows :</p>
+
+<p>Max_coins_for_kills/assists = 5 * Total_Players</p>
+
+<p> These coins are distributed more towards the players who have got more kills/assists as per their hero role and distributed less towards the players who have not fullfilled their hero's role.</p>
+
+<p>Max_penalty_for_deaths = -5 * Total_Players</p>
+
+<p>The penalty is distributed less towards the players who have got fewer deaths and more towards the players who have more deaths.</p>
+
+<p>Distribution of points is done in 2 stages :<p> Stage 1: Calculating each player's share, and distributing "Max_coins_for_kills/assists" as per each players share.</p></p>
+
+<p> Each player's share = CP * Kills + SP * Assists</p>
+
+<p>Now those 50 coins (Max_coins_for_kills/Assists) are distributed as follows :</p>
+
+<p>Player coins = (Each Player Share)/(Sum of all shares) * (Max_coins_for_kills/assists)</p>
+
+<p> Stage 2: Calculating each player's share and distributing "Max_penalty_for_deaths" as per each player's share.</p>
+
+<p> Each player's share = DM * Deaths</p>
+
+<p>Now that 50 penalty(Max_penalty_for_deaths) is distributed as follows:</p>
+
+<p>Each player's penalty = (each player's share)/(sum of all shares) * (Max_penalty_for_deaths)</p>
+
+<p>Finally, the total score for each player :</p>
+
+<p> Player's Coins gain + Player's Penalty + [ +0.25 for win | -0.25 otherwise ]</p>
+
+<p>The whole system is based on the idea that each player should play his hero to its maximum potential AND in the proper role. The system is ofcourse not perfect and needs lots of tweaks and fine tuning. Any feedback is appreciated.</p>
+
+<p>Send any suggestions/balance issues to marvin.dota.replays@gmail.com</p>
+
+<br><h3>Acknowledgments :</h3></br> Thanks to Mrc for initial formulae and Website design.<br> Buddhe for the valuable feedback on the Hero Stats.</br> Sleepy for the current Website design.<br> Monk for the truly awesome and epic "MoNk's Law" XD and ranking algorithm.</br> Blink for the idea.</p>
+            </p>
+            
+
+            <h2><a name="list">Complete List</a></h2>
+<table summary = "Full Statistics List" id="box-table-a"><tr><th>Hero</th><th>CP</th><th>SP</th><th>DM</th><tr><td>Admiral</td><td>0.7</td><td>0.5</td><td>0.5<tr><td>Alchemist</td><td>0.6</td><td>0.6</td><td>0.6<tr><td>Ancient Apparition</td><td>0.4</td><td>0.7</td><td>0.5<tr><td>Anti-Mage</td><td>0.9</td><td>0.3</td><td>0.7<tr><td>Axe</td><td>0.5</td><td>0.7</td><td>0.6<tr><td>Bane Elemental</td><td>0.4</td><td>0.6</td><td>0.6<tr><td>Batrider</td><td>0.6</td><td>0.6</td><td>0.6<tr><td>Beastmaster</td><td>0.6</td><td>0.6</td><td>0.5<tr><td>Bloodseeker</td><td>0.8</td><td>0.4</td><td>0.5<tr><td>Bone Fletcher</td><td>0.7</td><td>0.3</td><td>0.7<tr><td>Bounty Hunter</td><td>0.8</td><td>0.5</td><td>0.6<tr><td>Bristleback</td><td>0.6</td><td>0.6</td><td>0.7<tr><td>Broodmother</td><td>0.6</td><td>0.6</td><td>0.6<tr><td>Butcher</td><td>0.6</td><td>0.5</td><td>0.4<tr><td>Centaur Warchief</td><td>0.6</td><td>0.6</td><td>0.7<tr><td>Chaos Knight</td><td>0.7</td><td>0.6</td><td>0.6<tr><td>Clockwerk Goblin</td><td>0.5</td><td>0.7</td><td>0.5<tr><td>Crystal Maiden</td><td>0.2</td><td>0.9</td><td>0.3<tr><td>Dark Seer</td><td>0.4</td><td>0.7</td><td>0.5<tr><td>Death Prophet</td><td>0.5</td><td>0.6</td><td>0.6<tr><td>Demon Witch</td><td>0.3</td><td>0.8</td><td>0.5<tr><td>Disruptor</td><td>0.4</td><td>0.7</td><td>0.6<tr><td>Doom Bringer</td><td>0.65</td><td>0.5</td><td>0.5<tr><td>Dragon Knight</td><td>0.7</td><td>0.6</td><td>0.6<tr><td>Drow Ranger</td><td>0.8</td><td>0.4</td><td>0.5<tr><td>Dwarven Sniper</td><td>0.8</td><td>0.2</td><td>0.6<tr><td>Earthshaker</td><td>0.4</td><td>0.7</td><td>0.4<tr><td>Ember Spirit</td><td>0.7</td><td>0.5</td><td>0.7<tr><td>Enchantress</td><td>0.7</td><td>0.6</td><td>0.4<tr><td>Enigma</td><td>0.4</td><td>0.6</td><td>0.3<tr><td>Faceless Void</td><td>0.8</td><td>0.3</td><td>0.7<tr><td>Faerie Dragon</td><td>0.4</td><td>0.7</td><td>0.8<tr><td>Geomancer</td><td>0.8</td><td>0.5</td><td>0.4<tr><td>Goblin Shredder</td><td>0.5</td><td>0.5</td><td>0.6<tr><td>Goblin Techies</td><td>0.5</td><td>0.7</td><td>0.5<tr><td>Gorgon</td><td>0.9</td><td>0.3</td><td>0.7<tr><td>Grand Magus</td><td>0.5</td><td>0.6</td><td>0.5<tr><td>Guardian Wisp</td><td>0.3</td><td>0.8</td><td>0.4<tr><td>Gyrocopter</td><td>0.5</td><td>0.6</td><td>0.5<tr><td>Holy Knight</td><td>0.4</td><td>0.7</td><td>0.5<tr><td>Invoker</td><td>0.7</td><td>0.7</td><td>0.6<tr><td>Juggernaut</td><td>0.7</td><td>0.4</td><td>0.5<tr><td>Keeper of the Light</td><td>0.5</td><td>0.7</td><td>0.4<tr><td>Legion Commander</td><td>0.7</td><td>0.5</td><td>0.4<tr><td>Lich</td><td>0.4</td><td>0.7</td><td>0.5<tr><td>Lifestealer</td><td>0.7</td><td>0.4</td><td>0.5<tr><td>Lightning Revenant</td><td>0.65</td><td>0.4</td><td>0.5<tr><td>Lone Druid</td><td>0.7</td><td>0.4</td><td>0.5<tr><td>Lord of Avernus</td><td>0.6</td><td>0.6</td><td>0.7<tr><td>Lord of Olympus</td><td>0.3</td><td>0.6</td><td>0.5<tr><td>Lycanthrope</td><td>0.8</td><td>0.3</td><td>0.6<tr><td>Magnataur</td><td>0.6</td><td>0.6</td><td>0.5<tr><td>Moon Rider</td><td>0.7</td><td>0.5</td><td>0.4<tr><td>Morphling</td><td>0.8</td><td>0.3</td><td>0.7<tr><td>Murloc Nightcrawler</td><td>0.8</td><td>0.5</td><td>0.7<tr><td>Naga Siren</td><td>0.9</td><td>0.6</td><td>0.6<tr><td>Necro'lic</td><td>0.4</td><td>0.65</td><td>0.5<tr><td>Necrolyte</td><td>0.6</td><td>0.7</td><td>0.6<tr><td>Nerubian Assassin</td><td>0.4</td><td>0.7</td><td>0.6<tr><td>Nerubian Weaver</td><td>0.8</td><td>0.4</td><td>0.8<tr><td>Netherdrake</td><td>0.7</td><td>0.5</td><td>0.5<tr><td>Night Stalker</td><td>0.7</td><td>0.4</td><td>0.5<tr><td>Oblivion</td><td>0.6</td><td>0.7</td><td>0.6<tr><td>Obsidian Destroyer</td><td>0.9</td><td>0.4</td><td>0.5<tr><td>Ogre Magi</td><td>0.4</td><td>0.8</td><td>0.5<tr><td>Omniknight</td><td>0.4</td><td>0.7</td><td>0.5<tr><td>Pandaren Brewmaster</td><td>0.7</td><td>0.6</td><td>0.6<tr><td>Phantom Assassin</td><td>0.8</td><td>0.3</td><td>0.5<tr><td>Phantom Lancer</td><td>0.8</td><td>0.3</td><td>0.7<tr><td>Phoenix</td><td>0.6</td><td>0.4</td><td>0.6<tr><td>Pit Lord</td><td>0.4</td><td>0.7</td><td>0.6<tr><td>Priestess of the Moon</td><td>0.65</td><td>0.65</td><td>0.6<tr><td>Prophet</td><td>0.4</td><td>0.7</td><td>0.5<tr><td>Queen of Pain</td><td>0.6</td><td>0.5</td><td>0.7<tr><td>Rogue Knight</td><td>0.6</td><td>0.6</td><td>0.5<tr><td>Sacred Warrior</td><td>0.75</td><td>0.3</td><td>0.5<tr><td>Sand King</td><td>0.6</td><td>0.6</td><td>0.7<tr><td>Shadow Demon</td><td>0.4</td><td>0.65</td><td>0.5<tr><td>Shadow Fiend</td><td>0.7</td><td>0.3</td><td>0.5<tr><td>Shadow Priest</td><td>0.4</td><td>0.7</td><td>0.5<tr><td>Shadow Shaman</td><td>0.3</td><td>0.8</td><td>0.5<tr><td>Silencer</td><td>0.6</td><td>0.6</td><td>0.4<tr><td>Skeleton King</td><td>0.7</td><td>0.4</td><td>0.7<tr><td>Skywrath Mage</td><td>0.3</td><td>0.8</td><td>0.4<tr><td>Slayer</td><td>0.5</td><td>0.6</td><td>0.4<tr><td>Slithereen Guard</td><td>0.7</td><td>0.7</td><td>0.6<tr><td>Soul Keeper</td><td>0.9</td><td>0.3</td><td>0.5<tr><td>Spectre</td><td>0.9</td><td>0.3</td><td>0.6<tr><td>Spiritbreaker</td><td>0.7</td><td>0.4</td><td>0.5<tr><td>Stealth Assassin</td><td>0.8</td><td>0.3</td><td>0.6<tr><td>Stone Giant</td><td>0.6</td><td>0.6</td><td>0.5<tr><td>Storm Spirit</td><td>0.7</td><td>0.6</td><td>0.8<tr><td>Tauren Chieftain</td><td>0.4</td><td>0.7</td><td>0.5<tr><td>Templar Assassin</td><td>0.7</td><td>0.6</td><td>0.7<tr><td>Tidehunter</td><td>0.4</td><td>0.7</td><td>0.6<tr><td>Tinker</td><td>0.6</td><td>0.6</td><td>0.6<tr><td>Tormented Soul</td><td>0.4</td><td>0.7</td><td>0.5<tr><td>Treant Protector</td><td>0.4</td><td>0.6</td><td>0.7<tr><td>Troll Warlord</td><td>0.8</td><td>0.3</td><td>0.5<tr><td>Tuskarr</td><td>0.4</td><td>0.7</td><td>0.5<tr><td>Twin Head Dragon</td><td>0.4</td><td>0.6</td><td>0.5<tr><td>Undying</td><td>0.5</td><td>0.65</td><td>0.5<tr><td>Ursa Warrior</td><td>0.8</td><td>0.4</td><td>0.5<tr><td>Vengeful Spirit</td><td>0.5</td><td>0.8</td><td>0.3<tr><td>Venomancer</td><td>0.5</td><td>0.6</td><td>0.5<tr><td>Warlock</td><td>0.3</td><td>0.6</td><td>0.5<tr><td>Windrunner</td><td>0.7</td><td>0.7</td><td>0.6<tr><td>Witch Doctor</td><td>0.4</td><td>0.6</td><td>0.5</table>            
+        </div>            
+    
+        <div id = "footer">
+            <p>Points are temporary and for testing only.</p>
+        </div>
+    </div>
+</body>
+</html>

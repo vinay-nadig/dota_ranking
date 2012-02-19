@@ -1,0 +1,17 @@
+DotA v6.73c
+1.26
+-apspso
+42:46
+18/02/2012 19:11
+blinken
+Local Game (blinken)
+3v4
+Scourge
+
+blinken | Sentinel | KD: 1/8/4 CS: 54/8/0 | Shadow Shaman | 5748 |  Healing Salve ,  Ancient Tango of Essifation ,  Dagon 1 ,  Boots of Speed ,  Helm of Iron Will ,  Empty slot ,  | 14
+MoNk | Sentinel | KD: 1/9/6 CS: 41/4/0 | Treant Protector | 5929 |  Urn of Shadows ,  Vladmir's Offering ,  Headdress of Rejuvenation ,  Empty slot ,  Boots of Speed ,  Chainmail ,  | 15
+LeeOnidas | Sentinel | KD: 5/8/1 CS: 116/0/3 | Soul Keeper | 10433 |  Power Treads ,  Poor Man's Shield ,  Wraith Band ,  Scroll of Town Portal ,  Helm of the Dominator ,  Sange and Yasha ,  | 16
+buddhenator | Scourge | KD: 10/2/12 CS: 148/12/0 | Invoker | 21210 |  Phase Boots ,  Ancient Janggo of Endurance ,  Orchid Malevolence ,  Guinsoo's Scythe of Vyse ,  Empty slot ,  Scroll of Town Portal ,  | 16
+Massino(Spark) | Scourge | KD: 0/0/0 CS: 13/0/0 | Night Stalker | 774 |  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  | 4
+kRishtalysis | Scourge | KD: 9/2/6 CS: 136/0/0 | Windrunner | 18037 |  Null Talisman ,  Shiva's Guard ,  Scroll of Town Portal ,  Guinsoo's Scythe of Vyse ,  Power Treads ,  Empty slot ,  | 21
+sleepy | Scourge | KD: 6/3/16 CS: 92/4/0 | Crystal Maiden | 15687 |  Ogre Axe ,  Scroll of Town Portal ,  Force Staff ,  Phase Boots ,  Ultimate Orb ,  Ghost Scepter ,  | 21

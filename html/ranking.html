@@ -1,149 +1,30 @@
 <html>
 <head>
-<title> DOTA ranking</title>
-<style>
-	A:link, A:visited,A:active{
-		color:red;
-		text-decoration:none;
-	}
-	body{
-		background-image:url('cf.jpg');
-		color:white;
-	}
-	#overlay{
-		width:300px;
-		height:50px;
-		position:fixed;
-		top:0;
-		left:0;
-		background:blue;
-	}
-	#box_frame{
-		width:100%;
-		position:fixed;
-		top:30%;
-	}
-	#box{
-		color:black;
-		width:370px;
-		height:50px;
-		margin: auto;
-		border: 5px solid red;
-		padding:10px;
-		background:grey;
-		font-size:15px;
-}
-
-	</style>
-	<style type="text/css">
-table.altrowstable {
-	font-family: verdana,arial,sans-serif;
-	font-size:11px;
-	color: grey;
-	border-width: 1px;
-	border-color: #a9c6c9;
-	border-collapse: collapse;
-}
-table.altrowstable th {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #a9c6c9;
-}
-table.altrowstable td {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #a9c6c9;
-}
-.oddrowcolor{
-	background:#d4e3e5;
-}
-.evenrowcolor{
-	background:#c3dde0;
-}
-</style>
-
-	<script type="text/javascript">
-		function open_box(message) {
-			var box_content = '<div id="overlay"><div id = "box_frame"><div id 	= "box">'+message+'<br/><a href = "javascript:reset_dynamic()">close</a></div></div></div>';
-			document.getElementById('dynamic').innerHTML = box_content;		
-		}
-		function reset_dynamic() {
-			document.getElementById('dynamic').innerHTML = ' ';
-		}
-	</script>
-	<SCRIPT LANGUAGE="JavaScript">
-<!-- Original:  CodeLifter.com (support@codelifter.com) -->
-<!-- Web Site:  http://www.codelifter.com -->
-
-<!-- This script and many more are available free online at -->
-<!-- The JavaScript Source!! http://javascript.internet.com -->
-
-// do not edit anything below this line
-var t;
-var j = 0;
-var p = Pic.length;
-var preLoad = new Array();
-for (i = 0; i < p; i++) {
-preLoad[i] = new Image();
-preLoad[i].src = Pic[i];
-}
-function runSlideShow() {
-if (document.all) {
-document.images.SlideShow.style.filter="blendTrans(duration=2)";
-document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)";
-document.images.SlideShow.filters.blendTrans.Apply();
-}
-document.images.SlideShow.src = preLoad[j].src;
-if (document.all) {
-document.images.SlideShow.filters.blendTrans.Play();
-}
-j = j + 1;
-if (j > (p - 1)) j = 0;
-t = setTimeout('runSlideShow()', slideShowSpeed);
-}
-//  End -->
-</script>
-		<script type="text/javascript">
-function altRows(id){
-	if(document.getElementsByTagName){  
-		
-		var table = document.getElementById(id);  
-		var rows = table.getElementsByTagName("tr"); 
-		 
-		for(i = 0; i < rows.length; i++){          
-			if(i % 2 == 0){
-				rows[i].className = "evenrowcolor";
-			}else{
-				rows[i].className = "oddrowcolor";
-			}      
-		}
-	}
-}
-
-window.onload=function(){
-	altRows('alternatecolor');
-}
-</script>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Ranking</title>
 </head>
-<BODY onLoad="runSlideShow()">
-</div>
-	<div style = "position:absolute;top:000px">
-		<hr>
-		<h1>Welcome to <b> MVIT </b>dota ranking site</h1>
-		<h3>Scores are temporary and for testing purposes only</h3>
-		download the latest dota map
-		<a href = " http://dotahomer.com/">here</a>.
-		<br>
-		click <a href = "https://sites.google.com/site/mvitdota/"> here </a> to know more (Blink's site on Dota )
-		</br>
-		<br>
-		For details on how the points is calculated, click <a href = "help.html"> here </a>
-		</br>
-	</div>
-<br>
-	<div style = "position: absolute;left:200x;top:200px";>
-	<table class="altrowstable" id="alternatecolor"><tr><th>Player Id</th><th>Player Name</th><th>Total Kills</th><th>Total Deaths</th><th>Total Assists</th><th>Total Matches</th><th>Avg Points</th></tr>
-</br>
-<tr><td>3</td><td>sleepy</td><td>91</td><td>49</td><td>132</td><td>9</td><td>84.45</td></tr><tr><td>2</td><td>buddhenator</td><td>96</td><td>64</td><td>134</td><td>10</td><td>76.2</td></tr><tr><td>13</td><td>leeonidas</td><td>95</td><td>73</td><td>86</td><td>10</td><td>35.9</td></tr><tr><td>7</td><td>whiplash</td><td>43</td><td>15</td><td>19</td><td>2</td><td>29.4</td></tr><tr><td>6</td><td>marvin</td><td>33</td><td>34</td><td>54</td><td>4</td><td>12.7</td></tr><tr><td>8</td><td>massino(spark)</td><td>43</td><td>36</td><td>35</td><td>7</td><td>11.6</td></tr><tr><td>9</td><td>911</td><td>25</td><td>28</td><td>42</td><td>5</td><td>11.5</td></tr><tr><td>5</td><td>monk</td><td>30</td><td>58</td><td>76</td><td>8</td><td>9.4</td></tr><tr><td>17</td><td>Jax</td><td>9</td><td>3</td><td>5</td><td>1</td><td>6.7</td></tr><tr><td>22</td><td>labrinth</td><td>13</td><td>8</td><td>6</td><td>2</td><td>5.8</td></tr><tr><td>18</td><td>WrEck</td><td>2</td><td>1</td><td>4</td><td>2</td><td>3.6</td></tr><tr><td>1</td><td>shinigami</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>11</td><td>krazzy</td><td>8</td><td>8</td><td>3</td><td>1</td><td>-1.7</td></tr><tr><td>15</td><td>inductor</td><td>4</td><td>8</td><td>10</td><td>2</td><td>-3.4</td></tr><tr><td>19</td><td>mrc[labrinth]</td><td>11</td><td>14</td><td>8</td><td>1</td><td>-4.3</td></tr><tr><td>21</td><td>Aarakshaka</td><td>0</td><td>7</td><td>2</td><td>1</td><td>-6.2</td></tr><tr><td>24</td><td>WrEck</td><td>4</td><td>14</td><td>5</td><td>1</td><td>-8.9</td></tr><tr><td>20</td><td>WrEck</td><td>3</td><td>14</td><td>5</td><td>1</td><td>-9.5</td></tr><tr><td>12</td><td>rgenx</td><td>12</td><td>40</td><td>33</td><td>7</td><td>-9.85</td></tr><tr><td>23</td><td>mrc[labrinth]</td><td>3</td><td>13</td><td>6</td><td>1</td><td>-12.8</td></tr><tr><td>4</td><td>krishtalysis</td><td>35</td><td>48</td><td>26</td><td>5</td><td>-13</td></tr><tr><td>14</td><td>blinken</td><td>44</td><td>76</td><td>69</td><td>9</td><td>-15.4</td></tr><tr><td>16</td><td>Aarakshaka</td><td>4</td><td>24</td><td>6</td><td>4</td><td>-18.8</td></tr></table>
+<body id = "home">
+    <div id = "container">
+        <div id = "sidebar">
+            <a id="logo" href="index.html">mvit dota</a>
+            <ul id="navigation">
+                <li><a href="ranking.html" class="current">Ranking</a></li>
+                <li><a href="calculation.html">Calculation</a></li>
+                <li><a href="https://sites.google.com/site/mvitdota/">Learn More</a></li>
+                <li><a href="http://dotahomer.com">Download Maps</a></li>
+            </ul>
+        </div>
+
+        <div id = "main">
+          
+<table id="box-table-a" summary="mvit dota Ranking"><tr><th>Id</th><th>Name</th><th>Kills</th><th>Deaths</th><th>Assists</th><th>Matches</th><th>Average Points</tr><tr><td>3</td><td>sleepy</td><td>91</td><td>49</td><td>132</td><td>9</td><td>138.889753532</td></tr><tr><td>2</td><td>buddhenator</td><td>96</td><td>64</td><td>134</td><td>10</td><td>131.575725278</td></tr><tr><td>13</td><td>leeonidas</td><td>95</td><td>73</td><td>86</td><td>10</td><td>113.963901844</td></tr><tr><td>7</td><td>whiplash</td><td>43</td><td>15</td><td>19</td><td>2</td><td>111.700183132</td></tr><tr><td>9</td><td>911</td><td>25</td><td>28</td><td>42</td><td>5</td><td>109.805969603</td></tr><tr><td>1</td><td>shinigami</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td></tr><tr><td>11</td><td>krazzy</td><td>8</td><td>8</td><td>3</td><td>1</td><td>96.7241707968</td></tr><tr><td>8</td><td>massino(spark)</td><td>43</td><td>36</td><td>35</td><td>7</td><td>94.0460134107</td></tr><tr><td>6</td><td>marvin</td><td>33</td><td>34</td><td>54</td><td>4</td><td>94.0206797224</td></tr><tr><td>15</td><td>inductor</td><td>4</td><td>8</td><td>10</td><td>2</td><td>93.9426982746</td></tr><tr><td>5</td><td>monk</td><td>30</td><td>58</td><td>76</td><td>8</td><td>90.2958938032</td></tr><tr><td>12</td><td>rgenx</td><td>12</td><td>40</td><td>33</td><td>7</td><td>88.1611088624</td></tr><tr><td>16</td><td>mrc[labrinth]</td><td>14</td><td>27</td><td>14</td><td>2</td><td>86.7752518853</td></tr><tr><td>4</td><td>krishtalysis</td><td>35</td><td>48</td><td>26</td><td>5</td><td>84.0223692032</td></tr><tr><td>14</td><td>blinken</td><td>44</td><td>76</td><td>69</td><td>9</td><td>66.0762806527</td></tr>
+</table>
+        </div>            
+    
+        <div id = "footer">
+            <p>Points are temporary and for testing only.</p>
+        </div>
+    </div>
+</body>
+</html>

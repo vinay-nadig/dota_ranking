@@ -1,0 +1,17 @@
+DotA v6.73c
+1.26
+-apspso
+39:14
+19/02/2012 01:48
+sleepy
+Local Game (sleepy)
+4v3
+Scourge
+
+RGenX | Sentinel | KD: 4/9/3 CS: 13/0/9 | Night Stalker | 5824 |  Cranium Basher ,  Helm of Iron Will ,  Chainmail ,  Tranquil Boots ,  Empty slot ,  Empty slot ,  | 12
+Marvin | Sentinel | KD: 6/11/6 CS: 59/1/0 | Ember Spirit | 4817 |  Bracer ,  Perseverance ,  Sobi Mask ,  Power Treads ,  Empty slot ,  Empty slot ,  | 16
+mrc[labrinth] | Sentinel | KD: 3/13/6 CS: 58/2/0 | Lord of Avernus | 6535 |  Power Treads ,  Mask of Madness ,  Sange ,  Empty slot ,  Empty slot ,  Empty slot ,  | 14
+WrEck | Sentinel | KD: 4/14/5 CS: 55/0/0 | Soul Keeper | 5419 |  Bracer ,  Blade of Alacrity ,  Magic Wand ,  Boots of Speed ,  Scroll of Town Portal ,  Perseverance ,  | 14
+buddhenator | Scourge | KD: 17/5/17 CS: 103/4/0 | Faceless Void | 18355 |  Scroll of Town Portal ,  Vanguard ,  Power Treads ,  Mask of Madness ,  Eaglehorn ,  Quarterstaff ,  | 24
+sleepy | Scourge | KD: 14/6/19 CS: 110/5/0 | Slayer | 15658 |  Arcane Boots ,  Scroll of Town Portal ,  Kelen's Dagger ,  Guinsoo's Scythe of Vyse ,  Magic Wand ,  Empty slot ,  | 23
+LeeOnidas | Scourge | KD: 16/6/20 CS: 82/1/4 | Troll Warlord | 18816 |  The Butterfly ,  Ring of Aquila ,  Helm of the Dominator ,  Sange and Yasha ,  Power Treads ,  Empty slot ,  | 21
