@@ -1,0 +1,19 @@
+DotA v6.73c
+1.26
+-apspso
+1:08:20
+18/02/2012 19:12
+blinken
+Local Game (blinken)
+4v5
+Scourge
+
+blinken | Sentinel | KD: 2/20/14 CS: 80/7/1 | Admiral | 8514 |  Hood of Defiance ,  Phase Boots ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  | 18
+buddhenator | Sentinel | KD: 13/15/19 CS: 225/1/16 | Morphling | 13783 |  Empty Bottle ,  Magic Wand ,  Manta Style ,  Ethereal Blade ,  Empty slot ,  Power Treads ,  | 25
+911 | Sentinel | KD: 2/12/9 CS: 222/2/0 | Tinker | 11123 |  Null Talisman ,  Empty slot ,  Soul Ring ,  Boots of Travel ,  Oblivion Staff ,  Gem of True Sight ,  | 25
+whiplash | Sentinel | KD: 37/9/10 CS: 126/0/0 | Stealth Assassin | 22121 |  Power Treads ,  Empty slot ,  Crystalys ,  Diffusal Blade 1 ,  Sange and Yasha ,  Heart of Tarrasque ,  | 22
+Massino(Spark) | Scourge | KD: 20/10/11 CS: 196/2/1 | Sacred Warrior | 19867 |  Buriza-do Kyanon ,  Phase Boots ,  Hood of Defiance ,  Black King Bar ,  Empty slot ,  Vanguard ,  | 22
+leeonidas | Scourge | KD: 22/12/17 CS: 145/1/0 | Spectre | 20187 |  The Butterfly ,  Arcane Boots ,  Manta Style ,  Vanguard ,  Cranium Basher ,  Empty slot ,  | 23
+sleepy | Scourge | KD: 11/15/13 CS: 82/4/4 | Slithereen Guard | 11554 |  Vanguard ,  Magic Wand ,  Scroll of Town Portal ,  Boots of Travel ,  Planeswalker's Cloak ,  Empty slot ,  | 25
+RGenX | Scourge | KD: 1/7/10 CS: 78/0/0 | Lich | 12860 |  Aghanim's Scepter ,  Khadgar's Pipe of Insight ,  Perseverance ,  Empty slot ,  Boots of Speed ,  Empty slot ,  | 19
+MoNk | Scourge | KD: 2/12/22 CS: 61/4/2 | Demon Witch | 13216 |  Arcane Boots ,  Mekansm ,  Aghanim's Scepter ,  Mystic Staff ,  Empty slot ,  Empty slot ,  | 23

@@ -1,0 +1,148 @@
+<html>
+<head>
+<title> DOTA ranking</title>
+<style>
+	A:link, A:visited,A:active{
+		color:red;
+		text-decoration:none;
+	}
+	body{
+		background-image:url('cf.jpg');
+		color:white;
+	}
+	#overlay{
+		width:300px;
+		height:50px;
+		position:fixed;
+		top:0;
+		left:0;
+		background:blue;
+	}
+	#box_frame{
+		width:100%;
+		position:fixed;
+		top:30%;
+	}
+	#box{
+		color:black;
+		width:370px;
+		height:50px;
+		margin: auto;
+		border: 5px solid red;
+		padding:10px;
+		background:grey;
+		font-size:15px;
+}
+
+	</style>
+	<style type="text/css">
+table.altrowstable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color: grey;
+	border-width: 1px;
+	border-color: #a9c6c9;
+	border-collapse: collapse;
+}
+table.altrowstable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.altrowstable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+.oddrowcolor{
+	background:#d4e3e5;
+}
+.evenrowcolor{
+	background:#c3dde0;
+}
+</style>
+
+	<script type="text/javascript">
+		function open_box(message) {
+			var box_content = '<div id="overlay"><div id = "box_frame"><div id 	= "box">'+message+'<br/><a href = "javascript:reset_dynamic()">close</a></div></div></div>';
+			document.getElementById('dynamic').innerHTML = box_content;		
+		}
+		function reset_dynamic() {
+			document.getElementById('dynamic').innerHTML = ' ';
+		}
+	</script>
+	<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  CodeLifter.com (support@codelifter.com) -->
+<!-- Web Site:  http://www.codelifter.com -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+// do not edit anything below this line
+var t;
+var j = 0;
+var p = Pic.length;
+var preLoad = new Array();
+for (i = 0; i < p; i++) {
+preLoad[i] = new Image();
+preLoad[i].src = Pic[i];
+}
+function runSlideShow() {
+if (document.all) {
+document.images.SlideShow.style.filter="blendTrans(duration=2)";
+document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)";
+document.images.SlideShow.filters.blendTrans.Apply();
+}
+document.images.SlideShow.src = preLoad[j].src;
+if (document.all) {
+document.images.SlideShow.filters.blendTrans.Play();
+}
+j = j + 1;
+if (j > (p - 1)) j = 0;
+t = setTimeout('runSlideShow()', slideShowSpeed);
+}
+//  End -->
+</script>
+		<script type="text/javascript">
+function altRows(id){
+	if(document.getElementsByTagName){  
+		
+		var table = document.getElementById(id);  
+		var rows = table.getElementsByTagName("tr"); 
+		 
+		for(i = 0; i < rows.length; i++){          
+			if(i % 2 == 0){
+				rows[i].className = "evenrowcolor";
+			}else{
+				rows[i].className = "oddrowcolor";
+			}      
+		}
+	}
+}
+
+window.onload=function(){
+	altRows('alternatecolor');
+}
+</script>
+</head>
+<BODY onLoad="runSlideShow()">
+</div>
+	<div style = "position:absolute;top:000px">
+		<hr>
+		<h1>Welcome to <b> MVIT </b>dota ranking site</h1>
+		<h3>Scores are temporary and for testing purposes only</h3>
+		download the latest dota map
+		<a href = " http://dotahomer.com/">here</a>.
+		<br>
+		click <a href = "https://sites.google.com/site/mvitdota/"> here </a> to know more (Blink's site on Dota )
+		</br>
+		<br>
+		For details on how the points is calculated, click <a href = "help.html"> here </a>
+		</br>
+	</div>
+<br>
+	<div style = "position: absolute;left:200x;top:200px";>
+	<table class="altrowstable" id="alternatecolor"><tr><th>Player Id</th><th>Player Name</th><th>Total Kills</th><th>Total Deaths</th><th>Total Assists</th><th>Total Matches</th><th>Avg Points</th></tr>
+</br>

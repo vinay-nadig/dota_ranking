@@ -1,0 +1,20 @@
+DotA v6.73c
+1.26
+-soapsp
+32:08
+18/02/2012 19:17
+Jax
+Local Game (Jax)
+5v5
+Scourge
+
+Massino(Spark) | Sentinel | KD: 0/3/1 CS: 9/0/0 | Sand King | 500 |  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  | 4
+buddhenator | Sentinel | KD: 3/6/2 CS: 112/2/0 | Broodmother | 9224 |  Power Treads ,  Magic Wand ,  Vladmir's Offering ,  Mithril Hammer ,  Scroll of Town Portal ,  Ogre Axe ,  | 14
+Aarakshaka | Sentinel | KD: 1/5/2 CS: 24/0/0 | Juggernaut | 4857 |  Power Treads ,  Claymore ,  Sobi Mask ,  Magic Stick ,  Empty slot ,  Empty slot ,  | 11
+blinken | Sentinel | KD: 2/10/3 CS: 24/3/0 | Windrunner | 3922 |  Boots of Speed ,  Null Talisman ,  Empty slot ,  Staff of Wizardry ,  Empty slot ,  Empty slot ,  | 11
+sleepy | Sentinel | KD: 3/4/2 CS: 16/1/0 | Crystal Maiden | 4902 |  Scroll of Town Portal ,  Magic Wand ,  Boots of Speed ,  Force Staff ,  Empty slot ,  Empty slot ,  | 9
+Jax | Scourge | KD: 9/3/5 CS: 49/0/9 | Troll Warlord | 11419 |  Wraith Band ,  Helm of the Dominator ,  Boots of Travel ,  Crystalys ,  Perseverance ,  Empty slot ,  | 17
+RGenX | Scourge | KD: 1/1/2 CS: 52/0/4 | Lightning Revenant | 8797 |  Bracer ,  Khadgar's Pipe of Insight ,  Power Treads ,  Javelin ,  Empty slot ,  Empty slot ,  | 12
+WrEck | Scourge | KD: 2/1/4 CS: 25/0/0 | Skeleton King | 8821 |  Magic Wand ,  Bracer ,  Scroll of Town Portal ,  Broadsword ,  Perseverance ,  Boots of Speed ,  | 13
+leeonidas | Scourge | KD: 11/2/5 CS: 67/1/2 | Bounty Hunter | 14154 |  Vladmir's Offering ,  Power Treads ,  Battle Fury ,  Crystalys ,  Wraith Band ,  Empty slot ,  | 17
+MoNk | Scourge | KD: 3/3/6 CS: 47/2/0 | Shadow Shaman | 9547 |  Aghanim's Scepter ,  Boots of Travel ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  | 14

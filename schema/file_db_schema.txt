@@ -1,0 +1,3 @@
+Create table files(
+		Id INT PRIMARY KEY,
+		Name text);

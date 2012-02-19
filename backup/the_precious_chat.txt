@@ -1,0 +1,117 @@
+MoNk: which games are these?
+Marvin: recent ones that budde gave me. and still working on the thing.
+Marvin: err. v do not need to consider the total matches that a player has played :/
+Marvin: because with each match, he has both deaths and kills
+Marvin: so it ll be balanced.
+Marvin: http://dota.bshellz.net/ranking.html
+MoNk: definetely not....
+MoNk: c in each match if average score of all players is 0 i.e equal negative and positive then only it wont matter...
+Marvin: but as the no of games goes on, his kills = +ve points, his deaths = -ve points. both will increase right?
+Marvin: if i do the division thing, me and whip lead the table with on matches whereas budde sleepy etc are at bottom with some 7 matches with 0.13 or some point.s
+Marvin: *one
+MoNk: ya in a game overall avg score is +ve... i.e even ppl who have not played well will get scores like 1,2,3... if points is cumulative then if such ppl play 10 matches... there score will be +10,+20,+30... now a player who plays really well but came for oly
+MoNk: 1 match out of these 10... will have a score of +15
+MoNk: therefore over time the ppl who play regularly will go on top irrespective of performance
+Marvin: hmm. here is the problem. there are 2 factors which increase a persons points and only one that decreases his points.
+Marvin: thats the root of the problem.
+MoNk: anyways i hav smt in mind... will let u know when it is finalised
+Marvin: cool. so what do i do with this thing for now?
+Marvin: leave it as it is?
+MoNk: keep it... just put a heading... scores are temporary for testing purposes as of now
+Marvin: cool. u have work now?
+MoNk: nope... but i cant play...
+Marvin: not for playing.
+Marvin: even i cant play.
+MoNk: then?
+Marvin: i just thought of something else. how about v rank ppl with a role?
+Marvin: points as carry, points as support, and then overall points.
+MoNk: hmmm may work... come up with smt... i hav another idea... diff to explain here..
+Marvin: i ll have to w8 till tuesday if u want to explain face to face..
+MoNk: ok ill give it a shot... stop me if u dint get it...
+Marvin: sec.
+Marvin: w8
+Marvin: w8
+Marvin: w8
+Marvin: w8
+MoNk: tell?
+Marvin: brb.
+Marvin: yeah shoot.
+MoNk: k suppose there are 4 ppl in a game
+MoNk: and we calc the scores using existing formula
+MoNk: and they get smt like 10,8,5,2
+MoNk: total = ?
+Marvin: 10, 8, 5, 2 kills?
+MoNk: scores
+MoNk: points
+Marvin: total = 25
+MoNk: ya... now this total is not const in all games right?
+Marvin: nope.
+MoNk: so to make it const... v need to give total points for a game... (eg game with 3 players will have 15 pts, 10 will have 50 pts)
+MoNk: i mean total points awarded in the game
+Marvin: giving an upper limit based on number of ppl?
+MoNk: yup
+MoNk: now the next thing is distributing this total points among the players
+MoNk: so in the above eg
+MoNk: total points = 4 * 5 =20
+MoNk: player 1 = (10/25)*20 = ?
+MoNk: 8
+Marvin: yeah.
+MoNk: player 2 = ?
+Marvin: sec
+MoNk: 6.4
+MoNk: player 3 =
+Marvin: 5*20/25
+MoNk: 6.25
+MoNk: last guy is 1.6
+Marvin: for player 1. 10 kills divided by total points
+Marvin: the whole thing multiplied by?
+Marvin: whats 20
+Marvin: ?
+MoNk: not kills pa
+Marvin: *points.
+MoNk: rewind and scroll up
+Marvin: yeah i meant that only.
+MoNk: points = ((my_kills)/(total_kills))*(total points to be awarded for this match)
+MoNk: ssorry score
+MoNk: not kills score
+Marvin: 10 = his points, 25 = upper limit, 20 = total points for player 1 right?
+Marvin: (10 = his points, 25 = upper limit, 20 = total points) for player 1 right/
+MoNk: 25 = total score not upper limit i.e score_1 + score_2+score_3...
+MoNk: scroll up and revise again
+Marvin: hmm. makes sense. but y r v doing it? 10, 8, 5, 2 is already based on their performance right?
+Marvin: after all 10, 8, 5, 2 gets translated to 8, 6.4, 6.5, 1.6
+MoNk: w8 not done yet
+Marvin: oh okay.
+Marvin: go on.
+MoNk: so now new_points = 8,6.4,4,1.6
+Marvin: yeah.
+MoNk: total = ?
+Marvin: 20
+MoNk: 20
+MoNk: subtract 10 from all
+MoNk: sorry w8
+MoNk: cancel that
+Marvin: i followed till total of new points = 20
+MoNk: subtract 5 from all
+Marvin: 3, 1.4, -1, -3.4
+MoNk: calc avg
+Marvin: 0
+MoNk: ta da
+Marvin: hmm. how did u choose the number 5?
+Marvin: total/no of players?
+MoNk: coz max_points was itself (total_player*5)
+MoNk: save this chat b4 u dc
+Marvin: lol. dont worry. i got it.
+MoNk: so now that avg score is 0... u can always add up the scores
+MoNk: since there is equal bad, and equal good
+Marvin: hmm. 3, 1.4, -1, -3.4 are final points for each player for that match right?
+MoNk: ya
+MoNk: sum of +ve = sum of -ve
+MoNk: and also... points wont depend on no of players in the game...
+Marvin: and this is regarding as no of matches increases, points increases problem?
+MoNk: ya... it is the soln to that problem
+MoNk: how many ever matches u play.. the oly way to increase score is to play well
+Marvin: okay gimme 60 seconds. let me wrap my head around it.
+Marvin: okay i think i got this.
+MoNk: and save this chat anyways... u cant go on explaining it to all
+Marvin: i ll include in the script and check?

@@ -1,0 +1,33 @@
+Dota Stats
+
+Script to parse dota details from replays and upload it to a database which
+will be hosted online. (Inhouse games only)
+
+Dependencies :
+Python >= 2.5
+
+Files :
+backup - Contains misc files.
+		heroes.txt - contains a list of heroes and their cp, sp ad dm seperated by a comma
+		preset2.txt - contains custom script used by dota replay manager to create intermediate file.
+
+database :
+		dota.db - main database where all the data is stored.
+		files.db - contains a list of files and their hash value as id
+		heroes.db - list of heroes and their cp, sp and dm.
+
+file_dir - contains intermediate files created by replay download manager. (one for each game)
+
+html - creates the html file that contains the final data.
+		ranking.html - webpage containing ranking. (created by script)
+		template.txt - raw html code for table.
+
+lib - contains class files
+		classes.py - contains defnition for player and game classes.
+
+schema - contains database schema.
+
+dota.py - main script
+gen.py - clears the database.
+
+		

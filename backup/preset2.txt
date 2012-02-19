@@ -1,0 +1,11 @@
+{game:map}
+{game:wc3version}
+{game:mode}
+{game:length}
+{replay:time}
+{game:host}
+{game: name}
+{game: players:sentinel}v{game:players:scourge}
+{game:winner}
+{for:game:players}
+{player:name} | {player:team} | {player:stats} | {player:hero} | {player:gold} | {for:player:inventory} {item:name} , {endfor} | {player:hero:level}{endfor}

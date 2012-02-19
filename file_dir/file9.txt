@@ -1,0 +1,19 @@
+DotA v6.73c
+1.26
+-apspso
+45:31
+19/02/2012 00:57
+sleepy
+Local Game (sleepy)
+4v5
+Scourge
+
+RGenX | Sentinel | KD: 3/10/3 CS: 32/0/8 | Night Stalker | 6700 |  Chainmail ,  Bracer ,  Boots of Speed ,  Armlet of Mordiggian ,  Plate Mail ,  Chainmail ,  | 13
+mrc[labrinth] | Sentinel | KD: 11/14/8 CS: 57/2/8 | Dragon Knight | 7626 |  Power Treads ,  Mask of Madness ,  Sange ,  Empty slot ,  Empty slot ,  Empty slot ,  | 20
+WrEck | Sentinel | KD: 3/14/5 CS: 73/0/0 | Gyrocopter | 7780 |  Magic Wand ,  Boots of Speed ,  Scroll of Town Portal ,  Lothar's Edge ,  Void Stone ,  Chainmail ,  | 13
+kRishtalysis | Sentinel | KD: 6/16/8 CS: 77/0/0 | Magnataur | 6626 |  Empty slot ,  Magic Wand ,  Power Treads ,  Perseverance ,  Helm of the Dominator ,  Empty slot ,  | 18
+LeeOnidas | Scourge | KD: 9/6/14 CS: 101/0/0 | Sand King | 15001 |  Kelen's Dagger ,  Phase Boots ,  Empty Bottle ,  Vanguard ,  Aghanim's Scepter ,  Bracer ,  | 20
+buddhenator | Scourge | KD: 7/11/30 CS: 42/0/0 | Earthshaker | 12195 |  Blade Mail ,  Arcane Boots ,  Kelen's Dagger ,  Empty Bottle ,  Magic Wand ,  Scroll of Town Portal ,  | 20
+sleepy | Scourge | KD: 20/2/23 CS: 115/8/0 | Priestess of the Moon | 21820 |  The Butterfly ,  Magic Wand ,  Phase Boots ,  Diffusal Blade 1 ,  Yasha ,  Scroll of Town Portal ,  | 24
+Marvin | Scourge | KD: 14/6/21 CS: 46/1/1 | Sacred Warrior | 14908 |  Hood of Defiance ,  Aghanim's Scepter ,  Gauntlets of Strength ,  Power Treads ,  Aegis of the Immortal ,  Empty slot ,  | 19
+iNdUcToR | Scourge | KD: 4/4/9 CS: 44/0/0 | Dwarven Sniper | 9887 |  Ancient Tango of Essifation ,  Wraith Band ,  Wraith Band ,  Mask of Death ,  Wraith Band ,  Gauntlets of Strength ,  | 16

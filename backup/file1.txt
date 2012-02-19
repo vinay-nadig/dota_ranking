@@ -1,0 +1,18 @@
+DotA v6.73b
+1.26
+-rdspso
+43:27
+16/02/2012 22:07
+blinken
+Local Game (blinken)
+4v4
+Scourge
+
+kRishtalysis | Sentinel | KD: 8/7/6 CS: 92/1/0 | Lord of Olympus | 10027 |  Aghanim's Scepter ,  Empty slot ,  Bracer ,  Arcane Boots ,  Void Stone ,  Chainmail ,  | 16
+RGenX | Sentinel | KD: 0/9/7 CS: 21/0/0 | Demon Witch | 3737 |  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  | 11
+sleepy | Sentinel | KD: 3/9/10 CS: 117/1/1 | Nerubian Weaver | 10838 |  Vanguard ,  Power Treads ,  Crystalys ,  Scroll of Town Portal ,  Ultimate Orb ,  Empty slot ,  | 20
+blinken | Sentinel | KD: 8/7/5 CS: 27/5/0 | Stealth Assassin | 7913 |  Yasha ,  Empty slot ,  Wraith Band ,  Power Treads ,  Empty slot ,  Ogre Axe ,  | 15
+LeeOnidas | Scourge | KD: 9/6/7 CS: 124/0/3 | Lycanthrope | 16860 |  Empty slot ,  Boots of Speed ,  Vladmir's Offering ,  Vanguard ,  Heart of Tarrasque ,  Bracer ,  | 19
+buddhenator | Scourge | KD: 3/5/9 CS: 44/0/0 | Omniknight | 11101 |  Arcane Boots ,  Scroll of Town Portal ,  Dagon 1 ,  Ghost Scepter ,  Empty slot ,  Empty slot ,  | 18
+Massino(Spark) | Scourge | KD: 10/7/10 CS: 59/0/11 | Ursa Warrior | 11562 |  Vladmir's Offering ,  Phase Boots ,  Kelen's Dagger ,  Empty slot ,  Crystalys ,  Buriza-do Kyanon ,  | 19
+MoNk | Scourge | KD: 8/3/9 CS: 94/0/11 | Death Prophet | 17236 |  Guinsoo's Scythe of Vyse ,  Boots of Travel ,  Vitality Booster ,  Perseverance ,  Point Booster ,  Empty slot ,  | 19

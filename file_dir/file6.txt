@@ -1,0 +1,19 @@
+DotA v6.73c
+1.26
+-rdspso
+49:54
+18/02/2012 19:15
+blinken
+Local Game (blinken)
+5v4
+Scourge
+
+kRishtalysis | Sentinel | KD: 9/13/5 CS: 93/0/0 | Chaos Knight | 9369 |  Vladmir's Offering ,  Power Treads ,  Null Talisman ,  Sange and Yasha ,  Empty slot ,  Empty slot ,  | 18
+911 | Sentinel | KD: 3/6/12 CS: 129/3/0 | Stone Giant | 13065 |  Sacred Relic ,  Power Treads ,  Vladmir's Offering ,  Quarterstaff ,  Crystalys ,  Claymore ,  | 20
+MoNk | Sentinel | KD: 8/13/10 CS: 57/3/0 | Lich | 8961 |  Mekansm ,  Aghanim's Scepter ,  Empty slot ,  Empty slot ,  Boots of Speed ,  Empty slot ,  | 18
+leeonidas | Sentinel | KD: 7/17/4 CS: 59/0/8 | Phantom Assassin | 9836 |  Cranium Basher ,  Vladmir's Offering ,  Bracer ,  Power Treads ,  Stout Shield ,  Empty slot ,  | 17
+Massino(Spark) | Sentinel | KD: 0/0/0 CS: 0/0/0 | None | 4 |  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  Empty slot ,  | 0
+sleepy | Scourge | KD: 14/5/24 CS: 159/6/12 | Queen of Pain | 20503 |  Magic Wand ,  Boots of Speed ,  Guinsoo's Scythe of Vyse ,  Empty Bottle ,  Linken's Sphere ,  Scroll of Town Portal ,  | 25
+Marvin | Scourge | KD: 9/4/21 CS: 29/5/1 | Skywrath Mage | 13320 |  Magic Wand ,  Guinsoo's Scythe of Vyse ,  Arcane Boots ,  Dagon 1 ,  Empty slot ,  Empty slot ,  | 19
+buddhenator | Scourge | KD: 8/11/21 CS: 114/0/6 | Rogue Knight | 13660 |  Empty Bottle ,  Magic Stick ,  Black King Bar ,  Khadgar's Pipe of Insight ,  Boots of Speed ,  Scroll of Town Portal ,  | 21
+blinken | Scourge | KD: 17/9/11 CS: 65/2/30 | Lycanthrope | 16695 |  Power Treads ,  Abyssal Blade ,  Vladmir's Offering ,  Ironwood Branch ,  Empty slot ,  Empty slot ,  | 22

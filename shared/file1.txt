@@ -1,0 +1,16 @@
+DotA v6.73c
+1.26
+-apspso
+52:34
+14/02/2012 12:02
+sleepy
+Local Game (sleepy)
+3v3
+Scourge
+
+RGenX | Sentinel | KD: 3/5/8 CS: 117/0/12 | Lightning Revenant | 13018 |  Battle Fury ,  Maelstrom ,  Wraith Band ,  Chainmail ,  Javelin ,  Helm of Iron Will ,  | 21
+sleepy | Sentinel | KD: 7/13/12 CS: 111/4/0 | Vengeful Spirit | 10006 |  Sentry Wards ,  Scroll of Town Portal ,  Phase Boots ,  Empty slot ,  Eul's Scepter of Divinity ,  Magic Wand ,  | 23
+buddhenator | Sentinel | KD: 14/8/5 CS: 242/6/1 | Obsidian Destroyer | 18209 |  Guinsoo's Scythe of Vyse ,  Power Treads ,  Plate Mail ,  Force Staff ,  Empty slot ,  Mystic Staff ,  | 22
+LeeOnidas | Scourge | KD: 5/10/12 CS: 149/0/6 | Sand King | 15955 |  Empty slot ,  Kelen's Dagger ,  Arcane Boots ,  Vanguard ,  Messerschmidt's Reaver ,  Aghanim's Scepter ,  | 25
+Marvin | Scourge | KD: 13/5/13 CS: 130/3/6 | None | 17231 |  Bracer ,  Battle Fury ,  Power Treads ,  Vanguard ,  Maelstrom ,  Hyperstone ,  | 0
+Shinigami | Scourge | KD: 7/10/13 CS: 118/2/0 | Undying | 16632 |  Vladmir's Offering ,  Boots of Travel ,  Bloodstone ,  Empty slot ,  Empty slot ,  Empty slot ,  | 25

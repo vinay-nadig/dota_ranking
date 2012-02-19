@@ -1,0 +1,62 @@
+<!-- Javascript goes in the document HEAD -->
+<script type="text/javascript">
+function altRows(id){
+	if(document.getElementsByTagName){  
+		
+		var table = document.getElementById(id);  
+		var rows = table.getElementsByTagName("tr"); 
+		 
+		for(i = 0; i < rows.length; i++){          
+			if(i % 2 == 0){
+				rows[i].className = "evenrowcolor";
+			}else{
+				rows[i].className = "oddrowcolor";
+			}      
+		}
+	}
+}
+
+window.onload=function(){
+	altRows('alternatecolor');
+}
+</script>
+
+
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+<style type="text/css">
+table.altrowstable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #a9c6c9;
+	border-collapse: collapse;
+}
+table.altrowstable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.altrowstable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+.oddrowcolor{
+	background-color:#d4e3e5;
+}
+.evenrowcolor{
+	background-color:#c3dde0;
+}
+</style>
+
+
+<!-- Table goes in the document BODY -->
+<table class="altrowstable" id="alternatecolor"><tr><th>Player Id</th><th>Player Name</th><th>Total Kills</th><th>Total Deaths</th><th>Total Assists</th><th>Total Matches</th><th>Points</th></tr>
+<tr><td>1</td><td>shinigami</td><td>7</td><td>10</td><td>13</td><td>1</td><td>0</td></tr><tr><td>2</td><td>buddhenator</td><td>14</td><td>8</td><td>5</td><td>1</td><td>0</td></tr><tr><td>3</td><td>sleepy</td><td>7</td><td>13</td><td>12</td><td>1</td><td>0</td></tr><tr><td>4</td><td>krishtalysis</td><td>None</td><td>None</td><td>None</td><td>0</td><td>0</td></tr><tr><td>5</td><td>monk</td><td>None</td><td>None</td><td>None</td><td>0</td><td>0</td></tr><tr><td>6</td><td>marvin</td><td>13</td><td>5</td><td>13</td><td>1</td><td>0</td></tr><tr><td>7</td><td>whiplash</td><td>None</td><td>None</td><td>None</td><td>0</td><td>0</td></tr><tr><td>8</td><td>massino(spark)</td><td>None</td><td>None</td><td>None</td><td>0</td><td>0</td></tr><tr><td>9</td><td>mrc</td><td>None</td><td>None</td><td>None</td><td>0</td><td>0</td></tr><tr><td>10</td><td>eragorn</td><td>None</td><td>None</td><td>None</td><td>0</td><td>0</td></tr><tr><td>11</td><td>krazzy</td><td>None</td><td>None</td><td>None</td><td>0</td><td>0</td></tr><tr><td>12</td><td>rgenx</td><td>3</td><td>5</td><td>8</td><td>1</td><td>0</td></tr><tr><td>13</td><td>LeeOnidas</td><td>None</td><td>None</td><td>None</td><td>0</td><td>0</td></tr><tr><td>14</td><td>LeeOnidas </td><td>5</td><td>10</td><td>12</td><td>1</td><td>0</td></tr></table>
+
+<!--  The table code can be found here: http://www.textfixer/resources/css-tables.php#css-table03 -->
+
+
