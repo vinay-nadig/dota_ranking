@@ -9,7 +9,7 @@ Local Game (blinken)
 Sentinel
 
 sleepy | Sentinel | KD: 9/2/13 CS: 20/0/1 | Crystal Maiden | 9040 |  Sentry Wards ,  Magic Wand ,  Phase Boots ,  Force Staff ,  Bracer ,  Scroll of Town Portal ,  | 14
-labrinth | Sentinel | KD: 6/4/6 CS: 19/0/14 | Legion Commander | 7411 |  Power Treads ,  Mask of Death ,  Empty slot ,  Hyperstone ,  Empty slot ,  Empty slot ,  | 13
+mrc[labrinth] | Sentinel | KD: 6/4/6 CS: 19/0/14 | Legion Commander | 7411 |  Power Treads ,  Mask of Death ,  Empty slot ,  Hyperstone ,  Empty slot ,  Empty slot ,  | 13
 blinken | Sentinel | KD: 6/3/8 CS: 51/0/1 | Lycanthrope | 9664 |  Bracer ,  Boots of Speed ,  Ironwood Branch ,  Vladmir's Offering ,  Sacred Relic ,  Empty slot ,  | 15
 LeeOnidas | Sentinel | KD: 9/1/6 CS: 61/0/2 | Troll Warlord | 13151 |  Power Treads ,  Helm of the Dominator ,  Wraith Band ,  Yasha ,  The Butterfly ,  Empty slot ,  | 12
 buddhenator | Sentinel | KD: 6/4/8 CS: 32/10/0 | Necro'lic | 7275 |  Phase Boots ,  Magic Wand ,  Hood of Defiance ,  Dust of Appearance ,  Scroll of Town Portal ,  Sentry Wards ,  | 12

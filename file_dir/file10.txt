@@ -16,5 +16,5 @@ RGenX | Sentinel | KD: 2/3/2 CS: 12/0/26 | Night Stalker | 8039 |  Chainmail ,  
 Aarakshaka | Scourge | KD: 0/7/2 CS: 38/0/0 | Juggernaut | 4710 |  Power Treads ,  Sobi Mask ,  Broadsword ,  Magic Stick ,  Empty slot ,  Empty slot ,  | 11
 MoNk | Scourge | KD: 0/8/2 CS: 46/4/0 | Demon Witch | 3739 |  Nathrezim Buckler ,  Headdress of Rejuvenation ,  Null Talisman ,  Boots of Speed ,  Empty slot ,  Empty slot ,  | 11
 LeeOnidas | Scourge | KD: 1/5/4 CS: 56/0/0 | Silencer | 6102 |  Magic Wand ,  Force Staff ,  Null Talisman ,  Power Treads ,  Empty slot ,  Empty slot ,  | 12
-labrinth | Scourge | KD: 7/4/0 CS: 47/1/10 | Bounty Hunter | 8030 |  Power Treads ,  Ancient Tango of Essifation ,  Mask of Madness ,  Empty slot ,  Ultimate Orb ,  Empty slot ,  | 13
+mrc[labrinth] | Scourge | KD: 7/4/0 CS: 47/1/10 | Bounty Hunter | 8030 |  Power Treads ,  Ancient Tango of Essifation ,  Mask of Madness ,  Empty slot ,  Ultimate Orb ,  Empty slot ,  | 13
 blinken | Scourge | KD: 3/6/5 CS: 46/14/0 | Anti-Mage | 6031 |  Wraith Band ,  Vanguard ,  Power Treads ,  Healing Salve ,  Belt of Giant Strength ,  Empty slot ,  | 13

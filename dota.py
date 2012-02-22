@@ -5,8 +5,10 @@
 # Import the required modules
 import sqlite3
 import os
+import herolist
 from linecache import getline, clearcache
 from lib import classes
+
 
 # Establish the connections to the databases
 conn1 = sqlite3.connect("database/dota.db")
@@ -45,6 +47,7 @@ def main():
 						file_parser("file_dir/" + _file, game)
 #		upload_player_stats()
 		write_html()
+		herolist.main()
 		conn1.commit()
 		conn1.close()
 		conn2.commit()
@@ -56,8 +59,11 @@ def write_html():
 
 		cur1.execute("select * from player order by points desc")
 		to_write = ""
+		rank = 1
 		for row in cur1.fetchall():
-				to_write += "<tr><td>" + str(row[0]) + "</td><td>" + str(row[1]) + "</td><td>" + str(row[2]) + "</td><td>" + str(row[3]) + "</td><td>" + str(row[4]) + "</td><td>" +  str(row[5]) + "</td><td>" + str(row[6]) + "</td></tr>"
+				if(row[5]):
+						to_write += "<tr><td>" + str(rank) + "</td><td>" + str(row[0]) + "</td><td>" + str(row[1]) + "</td><td>" + str(row[2]) + "</td><td>" + str(row[3]) + "</td><td>" + str(row[4]) + "</td><td>" +  str(row[5]) + "</td><td>" + str(row[6]) + "</td></tr>"
+						rank += 1
 
 		template = template.replace("PLACEHOLDER", to_write)
 		fp.write(template)
@@ -219,7 +225,7 @@ def moderate_points(game):
 				cur1.execute("select points from player where player.id=?", (i,))
 				points = cur1.fetchall()[0][0]
 				dic_of_final_points[i] = points + dic_of_points[i][0] + dic_of_points[i][1]
-				t = (dic_of_final_points[i], i)
+				t = (round(dic_of_final_points[i], 2), i)
 				cur1.execute("update player set points=? where id=?", t)
 
 

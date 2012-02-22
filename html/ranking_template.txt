@@ -12,13 +12,16 @@
                 <li><a href="ranking.html" class="current">Ranking</a></li>
                 <li><a href="calculation.html">Calculation</a></li>
                 <li><a href="https://sites.google.com/site/mvitdota/">Learn More</a></li>
+								<li><a href="http://wix.com/mrcchiru/mvitdota">Learn Even More</a></li>
                 <li><a href="http://dotahomer.com">Download Maps</a></li>
+								<li><a href="changelog.html">Changelog</a></li>
             </ul>
         </div>
 
         <div id = "main">
+				<p>Details on heroes played <a href="heroes.html">here.</a></p>
           
-<table id="box-table-a" summary="mvit dota Ranking"><tr><th>Id</th><th>Name</th><th>Kills</th><th>Deaths</th><th>Assists</th><th>Matches</th><th>Average Points</tr>PLACEHOLDER
+<table id="box-table-a" summary="mvit dota Ranking"><tr><th>Rank</th><th>Id</th><th>Name</th><th>Kills</th><th>Deaths</th><th>Assists</th><th>Matches</th><th>Average Points</tr>PLACEHOLDER
 </table>
         </div>            
     
