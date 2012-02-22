@@ -1,0 +1,35 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>mvit dota</title>
+</head>
+<body id = "home">
+    <div id = "container">
+        <div id = "sidebar">
+            <a id="logo" href="index.html">mvit dota</a>
+            <ul id="navigation">
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="calculation.html">Calculation</a></li>
+                <li><a href="https://sites.google.com/site/mvitdota/">Learn More</a></li>
+                <li><a href="http://dotahomer.com">Download Maps</a></li>
+								<li><a href="changelog.html">Changelog</a></li>
+            </ul>
+        </div>
+
+        <div id = "main">
+	    <h2>Player Hero Summary</h2>
+	    <p>Hover over the hero icons to know more. Read as Hero(K/D/A).<br /></p>
+            PLACEHOLDERTABLE1
+	    <br />
+	    <h2>Heroes Played Summary</h2>
+            PLACEHOLDERTABLE2
+        </div>            
+    
+        <div id = "footer">
+            <p>Points are temporary and for testing only.</p>
+        </div>
+    </div>
+</body>
+</html>
+
