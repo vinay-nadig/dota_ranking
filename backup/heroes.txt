@@ -1,108 +1,108 @@
 Admiral,0.7,0.5,0.5
 Alchemist,0.6,0.6,0.6
-Ancient Apparition,0.4,0.7,0.5
+Ancient Apparition,0.45,0.75,0.5
 Anti-Mage,0.9,0.3,0.7
 Axe,0.5,0.7,0.6
-Bane Elemental,0.4,0.6,0.6
+Bane Elemental,0.5,0.7,0.6
 Batrider,0.6,0.6,0.6
 Beastmaster,0.6,0.6,0.5
 Bloodseeker,0.8,0.4,0.5
-Bone Fletcher,0.7,0.3,0.7,
-Bounty Hunter,0.8,0.5,0.6
+Bone Fletcher,0.75,0.45,0.7,
+Bounty Hunter,0.8,0.4,0.6
 Bristleback,0.6,0.6,0.7
 Broodmother,0.6,0.6,0.6
-Butcher,0.6,0.5,0.4
+Butcher,0.65,0.55,0.4
 Centaur Warchief,0.6,0.6,0.7
-Chaos Knight,0.7,0.6,0.6
+Chaos Knight,0.7,0.5,0.6
 Clockwerk Goblin,0.5,0.7,0.5
-Crystal Maiden,0.2,0.9,0.3
-Dark Seer,0.4,0.7,0.5
-Death Prophet,0.5,0.6,0.6
-Demon Witch,0.3,0.8,0.5
-Disruptor,0.4,0.7,0.6
-Doom Bringer,0.65,0.5,0.5
-Dragon Knight,0.7,0.6,0.6
+Crystal Maiden,0.3,0.9,0.3
+Dark Seer,0.45,0.75,0.5
+Death Prophet,0.5,0.7,0.6
+Demon Witch,0.35,0.85,0.5
+Disruptor,0.45,0.75,0.6
+Doom Bringer,0.65,0.55,0.5
+Dragon Knight,0.7,0.5,0.6
 Drow Ranger,0.8,0.4,0.5
-Dwarven Sniper,0.8,0.2,0.6
-Earthshaker,0.4,0.7,0.4
+Dwarven Sniper,0.8,0.4,0.6
+Earthshaker,0.45,0.75,0.4
 Ember Spirit,0.7,0.5,0.7
-Enchantress,0.7,0.6,0.4
-Enigma,0.4,0.6,0.3
-Faceless Void,0.8,0.3,0.7
-Faerie Dragon,0.4,0.7,0.8
-Geomancer,0.8,0.5,0.4
-Goblin Shredder,0.5,0.5,0.6
+Enchantress,0.65,0.5,0.4
+Enigma,0.5,0.7,0.3
+Faceless Void,0.85,0.35,0.7
+Faerie Dragon,0.45,0.75,0.8
+Geomancer,0.75,0.45,0.4
+Goblin Shredder,0.6,0.6,0.6
 Goblin Techies,0.5,0.7,0.5
 Gorgon,0.9,0.3,0.7
-Grand Magus,0.5,0.6,0.5
-Guardian Wisp,0.3,0.8,0.4
-Gyrocopter,0.5,0.6,0.5
-Holy Knight,0.4,0.7,0.5
-Invoker,0.7,0.7,0.6
-Juggernaut,0.7,0.4,0.5
+Grand Magus,0.5,0.7,0.5
+Guardian Wisp,0.3,0.9,0.4
+Gyrocopter,0.55,0.65,0.5
+Holy Knight,0.4,0.8,0.5
+Invoker,0.6,0.6,0.6
+Juggernaut,0.7,0.5,0.5
 Keeper of the Light,0.5,0.7,0.4
 Legion Commander,0.7,0.5,0.4
-Lich,0.4,0.7,0.5
-Lifestealer,0.7,0.4,0.5
-Lightning Revenant,0.65,0.4,0.5
-Lone Druid,0.7,0.4,0.5
+Lich,0.45,0.75,0.5
+Lifestealer,0.8,0.4,0.5
+Lightning Revenant,0.7,0.5,0.5
+Lone Druid,0.7,0.5,0.5
 Lord of Avernus,0.6,0.6,0.7
-Lord of Olympus,0.3,0.6,0.5
-Lycanthrope,0.8,0.3,0.6
+Lord of Olympus,0.4,0.8,0.5
+Lycanthrope,0.8,0.4,0.6
 Magnataur,0.6,0.6,0.5
 Moon Rider,0.7,0.5,0.4
-Morphling,0.8,0.3,0.7
-Murloc Nightcrawler,0.8,0.5,0.7
-Naga Siren,0.9,0.6,0.6
-Necro'lic,0.4,0.65,0.5
-Necrolyte,0.6,0.7,0.6
-Nerubian Assassin,0.4,0.7,0.6
+Morphling,0.8,0.4,0.7
+Murloc Nightcrawler,0.8,0.4,0.7
+Naga Siren,0.8,0.4,0.6
+Necro'lic,0.5,0.7,0.5
+Necrolyte,0.5,0.7,0.6
+Nerubian Assassin,0.5,0.7,0.6
 Nerubian Weaver,0.8,0.4,0.8
 Netherdrake,0.7,0.5,0.5
-Night Stalker,0.7,0.4,0.5
-Oblivion,0.6,0.7,0.6
-Obsidian Destroyer,0.9,0.4,0.5
+Night Stalker,0.8,0.4,0.5
+Oblivion,0.55,0.65,0.6
+Obsidian Destroyer,0.8,0.4,0.5
 Ogre Magi,0.4,0.8,0.5
-Omniknight,0.4,0.7,0.5
-Pandaren Brewmaster,0.7,0.6,0.6
-Phantom Assassin,0.8,0.3,0.5
-Phantom Lancer,0.8,0.3,0.7
-Phoenix,0.6,0.4,0.6
-Pit Lord,0.4,0.7,0.6
-Priestess of the Moon,0.65,0.65,0.6,
-Prophet,0.4,0.7,0.5
-Queen of Pain,0.6,0.5,0.7
+Omniknight,0.45,0.75,0.5
+Pandaren Brewmaster,0.65,0.55,0.6
+Phantom Assassin,0.85,0.35,0.5
+Phantom Lancer,0.8,0.4,0.7
+Phoenix,0.65,0.55,0.6
+Pit Lord,0.45,0.75,0.6
+Priestess of the Moon,0.6,0.6,0.6,
+Prophet,0.5,0.7,0.5
+Queen of Pain,0.65,0.55,0.7
 Rogue Knight,0.6,0.6,0.5
-Sacred Warrior,0.75,0.3,0.5
+Sacred Warrior,0.8,0.4,0.5
 Sand King,0.6,0.6,0.7
-Shadow Demon,0.4,0.65,0.5
-Shadow Fiend,0.7,0.3,0.5
+Shadow Demon,0.6,0.6,0.5
+Shadow Fiend,0.75,0.45,0.5
 Shadow Priest,0.4,0.7,0.5
-Shadow Shaman,0.3,0.8,0.5
+Shadow Shaman,0.35,0.85,0.5
 Silencer,0.6,0.6,0.4
-Skeleton King,0.7,0.4,0.7
-Skywrath Mage,0.3,0.8,0.4
-Slayer,0.5,0.6,0.4
-Slithereen Guard,0.7,0.7,0.6
+Skeleton King,0.75,0.45,0.7
+Skywrath Mage,0.4,0.8,0.4
+Slayer,0.55,0.65,0.4
+Slithereen Guard,0.7,0.5,0.6
 Soul Keeper,0.9,0.3,0.5
 Spectre,0.9,0.3,0.6
-Spiritbreaker,0.7,0.4,0.5
-Stealth Assassin,0.8,0.3,0.6
+Spiritbreaker,0.75,0.45,0.5
+Stealth Assassin,0.85,0.35,0.6
 Stone Giant,0.6,0.6,0.5
-Storm Spirit,0.7,0.6,0.8
-Tauren Chieftain,0.4,0.7,0.5
-Templar Assassin,0.7,0.6,0.7
-Tidehunter,0.4,0.7,0.6
+Storm Spirit,0.65,0.55,0.8
+Tauren Chieftain,0.45,0.75,0.5
+Templar Assassin,0.65,0.55,0.7
+Tidehunter,0.5,0.7,0.6
 Tinker,0.6,0.6,0.6
-Tormented Soul,0.4,0.7,0.5
-Treant Protector,0.4,0.6,0.7
-Troll Warlord,0.8,0.3,0.5
-Tuskarr,0.4,0.7,0.5
-Twin Head Dragon,0.4,0.6,0.5
-Undying,0.5,0.65,0.5
+Tormented Soul,0.45,0.75,0.5
+Treant Protector,0.5,0.7,0.7
+Troll Warlord,0.85,0.35,0.5
+Tuskarr,0.45,0.75,0.5
+Twin Head Dragon,0.5,0.7,0.5
+Undying,0.55,0.65,0.5
 Ursa Warrior,0.8,0.4,0.5
-Vengeful Spirit,0.5,0.8,0.3
-Venomancer,0.5,0.6,0.5
-Warlock,0.3,0.6,0.5
-Windrunner,0.7,0.7,0.6
-Witch Doctor,0.4,0.6,0.5
+Vengeful Spirit,0.4,0.8,0.3
+Venomancer,0.55,0.65,0.5
+Warlock,0.5,0.7,0.5
+Windrunner,0.6,0.6,0.6
+Witch Doctor,0.45,0.75,0.5
