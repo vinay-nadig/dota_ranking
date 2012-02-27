@@ -5,9 +5,9 @@
 # Import the required modules
 import sqlite3
 import os
-import herolist
 from linecache import getline, clearcache
 from lib import classes
+import pickle
 
 
 # Establish the connections to the databases
@@ -20,23 +20,7 @@ cur3 = conn3.cursor()
 clearcache()
 
 # dic defining code for each player
-dic = {  'shi' : 'shinigami',
-				'bud' : 'buddhenator',
-				'sle' : 'sleepy',
-				'kri' : 'krishtalysis',
-				'mon' : 'monk',
-				'mar' : 'marvin',
-				'whi' : 'whiplash',
-				'mas' : 'massino(spark)',
-				'911' : '911',
-				'kra' : 'krazzy',
-				'rge' : 'rgenx',
-				'lee' : 'leeonidas',
-				'bli' : 'blinken',
-				'ind' : 'inductor',
-				'mrc' : 'mrc[labrinth]'}
-			
-
+dic = pickle.load(open("data/dic_of_players.p", "r"))
 
 def main():
 		new_files = file_db_maintain()
@@ -47,7 +31,6 @@ def main():
 						file_parser("file_dir/" + _file, game)
 #		upload_player_stats()
 		write_html()
-		herolist.main()
 		conn1.commit()
 		conn1.close()
 		conn2.commit()
@@ -108,17 +91,7 @@ def upload_player_info(player, game, player_code):
 						t = (player.pid, player.name, 0, 0, 0 ,0, 100)
 						cur1.execute("insert into player values(?,?,?,?,?,?,?)", t)
 						dic[player_code] = player.name
-#		try:
-#				t = (dic[player_code],)
-#				cur1.execute("select id from player where name=?", t)
-#				player.pid = cur1.fetchall()[0][0]
-		# if he is a new player, create a new id and add to database
-#		except:
-#				cur1.execute("select max(id) from player")
-#				player.pid = cur1.fetchall()[0][0] + 1
-#				t = (player.pid, player.name, 0, 0, 0, 0, 0)
-#				cur1.execute("insert into player values(?,?,?,?,?,?,?)", t)
-#				dic[player_code] = player.name
+						pickle.dump(dic, open("data/dic_of_players.p", "w"))
 		t = (player.hero,)
 		cur3.execute("select cp, sp, dm from heroes where name=?", t)
 		res = cur3.fetchall()
@@ -233,3 +206,4 @@ def moderate_points(game):
 		
 if __name__ == "__main__":
 		main()
+
