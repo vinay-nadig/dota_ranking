@@ -24,7 +24,7 @@ if __name__ == '__main__':
         if t[1] not in hero_count.keys():
             hero_count[t[1]] = 0
         hero_count[t[1]] += 1
-    
+
 
     toreplace = '''<table id = "box-table-a"><tr><th>Name</th><th>Heroes</th></tr>'''
     
