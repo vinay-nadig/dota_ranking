@@ -45,7 +45,7 @@ def write_html():
 		rank = 1
 		for row in cur1.fetchall():
 				if(row[5]):
-						to_write += "<tr><td>" + str(rank) + "</td><td>" + str(row[0]) + "</td><td>" + str(row[1]) + "</td><td>" + str(row[2]) + "</td><td>" + str(row[3]) + "</td><td>" + str(row[4]) + "</td><td>" +  str(row[5]) + "</td><td>" + str(row[6]) + "</td></tr>"
+						to_write += "<tr><td>" + str(rank) + "</td><td>" + str(row[1]) + "</td><td>" + str(row[2]) + "</td><td>" + str(row[3]) + "</td><td>" + str(row[4]) + "</td><td>" +  str(row[5]) + "</td><td>" + str(row[6]) + "</td></tr>"
 						rank += 1
 
 		template = template.replace("PLACEHOLDER", to_write)
@@ -78,7 +78,7 @@ def upload_game_info(game):
 def upload_player_info(player, game, player_code):
 		# to check if he is a new player
 		if(player_code in dic.keys()):
-				t = (dic[player_code],)
+				t = ((dic[player_code]).lower(),)
 				cur1.execute("select id from player where name=?", t)
 				player.pid = cur1.fetchall()[0][0]
 		else:
@@ -100,17 +100,17 @@ def upload_player_info(player, game, player_code):
 				cp, sp, dm = res[0][0], res[0][1], res[0][2]
 		except:
 				cp, sp, dm = 0.5, 0.5, 0.5
-		t = (game.Id, player.pid, player.item_list[0], player.item_list[1], player.item_list[2], player.item_list[3], player.item_list[4], player.item_list[5], player.kills, player.deaths, player.hero, player.ck, player.cd, player.assists, player.gold, player.nk)
-		cur1.execute("insert into gameplay values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", t)
+		t = (game.Id, player.pid, player.item_list[0], player.item_list[1], player.item_list[2], player.item_list[3], player.item_list[4], player.item_list[5], player.kills, player.deaths, player.hero, player.ck, player.cd, player.assists, player.gold, player.nk, player.team)
+		cur1.execute("insert into gameplay values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", t)
 		t = (player.pid,)
 		cur1.execute("select count(*) from gameplay where pid=?", t)
 		tot_matches = cur1.fetchall()[0][0]
 		cur1.execute("select points from player where id=?", t)
 		points = cur1.fetchall()[0][0]
 		if(player.team.strip() == game.winner.strip()):
-				points = points + (cp*player.kills + sp*player.assists - 2*dm*player.deaths + 1)
+				points = points + (cp*player.kills + sp*player.assists - dm*player.deaths + 1)
 		else:
-				points = points + (cp*player.kills + sp*player.assists - 2*dm*player.deaths)
+				points = points + (cp*player.kills + sp*player.assists - dm*player.deaths)
 		upload_player_stats1(player, game, points)
 
 # Function to maintain the file database.
@@ -163,9 +163,9 @@ def file_parser(filename, game):
 				player.cd = int(player_stats[4])
 				player.nk = int(player_stats[5])
 				upload_player_info(player, game, player_code)
-		moderate_points(game)
+		moderate_points(game, filename)
 
-def moderate_points(game):
+def moderate_points(game, filename):
 		dic_of_temp_scores = {}
 		dic_of_final_points = {}
 		dic_of_points = {}
@@ -175,6 +175,9 @@ def moderate_points(game):
 		t = (game.Id,)
 		cur1.execute("select pid from gameplay where gid=?", t)
 		res = cur1.fetchall()
+		sent_no_of_players = int(getline(filename, 8).rstrip()[0]) 
+		scouge_no_of_players = int(getline(filename, 8).rstrip()[2])
+
 		for i in res:
 				t = (game.Id, i[0])
 				cur1.execute("select kills, deaths, assists, hero from gameplay where gid=? and pid=?", t)
@@ -188,7 +191,20 @@ def moderate_points(game):
 						cp, sp, dm = res[0][0], res[0][1], res[0][2]
 				else:
 						cp, sp, dm = 0.5, 0.5, 0.5
-				dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp), (-dm*dic_of_stats[i][1]))
+				t = (game.Id, i)
+				cur1.execute("select team from gameplay where gid=? and pid=?", t)	
+				team = cur1.fetchall()[0][0]
+				if(game.winner == team):
+						if(team == 'Scouge'):
+								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp + 0.2*sent_no_of_players), (-dm*dic_of_stats[i][1]))
+						else:
+								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp + 0.2*scouge_no_of_players), (-dm*dic_of_stats[i][1]))
+				else:
+						if(team == 'Scouge'):
+								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp - 0.2*sent_no_of_players), (-dm*dic_of_stats[i][1]))
+						else:
+								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp - 0.2*scouge_no_of_players), (-dm*dic_of_stats[i][1]))
+
 		for i in dic_of_temp_scores:
 				total_g += dic_of_temp_scores[i][0]
 				total_l += abs(dic_of_temp_scores[i][1])
