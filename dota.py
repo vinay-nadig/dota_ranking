@@ -100,8 +100,8 @@ def upload_player_info(player, game, player_code):
 				cp, sp, dm = res[0][0], res[0][1], res[0][2]
 		except:
 				cp, sp, dm = 0.5, 0.5, 0.5
-		t = (game.Id, player.pid, player.item_list[0], player.item_list[1], player.item_list[2], player.item_list[3], player.item_list[4], player.item_list[5], player.kills, player.deaths, player.hero, player.ck, player.cd, player.assists, player.gold, player.nk, player.team)
-		cur1.execute("insert into gameplay values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", t)
+		t = (game.Id, player.pid, player.item_list[0], player.item_list[1], player.item_list[2], player.item_list[3], player.item_list[4], player.item_list[5], player.kills, player.deaths, player.hero, player.ck, player.cd, player.assists, player.gold, player.nk, player.team, "Unknown")
+		cur1.execute("insert into gameplay values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", t)
 		t = (player.pid,)
 		cur1.execute("select count(*) from gameplay where pid=?", t)
 		tot_matches = cur1.fetchall()[0][0]
@@ -194,16 +194,20 @@ def moderate_points(game, filename):
 				t = (game.Id, i)
 				cur1.execute("select team from gameplay where gid=? and pid=?", t)	
 				team = cur1.fetchall()[0][0]
-				if(game.winner == team):
+				if(game.winner.strip().lower() == team.strip().lower()):
+						t = (game.Id, i)
+						cur1.execute("update gameplay set result='Win' where gid=? and pid=?", t)
 						if(team == 'Scouge'):
-								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp + 0.2*sent_no_of_players), (-dm*dic_of_stats[i][1]))
+								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp + 0.05*sent_no_of_players), (-dm*dic_of_stats[i][1]))
 						else:
-								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp + 0.2*scouge_no_of_players), (-dm*dic_of_stats[i][1]))
+								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp + 0.05*scouge_no_of_players), (-dm*dic_of_stats[i][1]))
 				else:
+						t = (game.Id, i)
+						cur1.execute("update gameplay set result='Lost' where gid=? and pid=?", t)
 						if(team == 'Scouge'):
-								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp - 0.2*sent_no_of_players), (-dm*dic_of_stats[i][1]))
+								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp - 0.05*sent_no_of_players), (-dm*dic_of_stats[i][1]))
 						else:
-								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp - 0.2*scouge_no_of_players), (-dm*dic_of_stats[i][1]))
+								dic_of_temp_scores[i] = ((dic_of_stats[i][0]*cp + dic_of_stats[i][2]*sp - 0.05*scouge_no_of_players), (-dm*dic_of_stats[i][1]))
 
 		for i in dic_of_temp_scores:
 				total_g += dic_of_temp_scores[i][0]

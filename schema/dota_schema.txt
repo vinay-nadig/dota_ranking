@@ -37,5 +37,6 @@ Create table Gameplay(
 		Gold int default 0,
 		Neutral_Kills int default 0,
 		Team text Not Null,
+		Result text default 'Unknown',
 		constraint fk_gid foreign key(Gid) references Game(Id),
 		constraint fk_pid foreign key(Pid) references Player(Id));
